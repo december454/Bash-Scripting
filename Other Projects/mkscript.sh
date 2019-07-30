@@ -1,12 +1,17 @@
 #! /bin/bash
 
-#if [ -z "$1" ]; then
-#echo "It is null"
-#fi
+if [ -z "$1" ]; then
+	echo "It is null"
+fi
 
 if [[ ! $1 =~ "/" ]]; then
 	pwdtest=$(pwd)$"/"$1
 fi
+
+#if [[expr index "$1" / -eq 1]]; then
+#	pwdtest=$1
+#fi
+
 
 echo "$pwdtest"
 
