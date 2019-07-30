@@ -12,8 +12,3 @@ read loanYears
 totalInterest=`echo "$loanAmount * $interestRate * $loanYears / 100" | bc`
 
 echo -e "\nYou spent $totalInterest dollars on interest over the past $loanYears years."
-
-
-
-
-
