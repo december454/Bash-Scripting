@@ -19,27 +19,23 @@ if [ -z "$1" ]; then
 	exit
 fi
 
-#An if statement which executes if an absolute path is given as the parameter, checks to see if the first character is a /.
-#It will set the $destination to be the parameter, exactly as entered.
+#If an absolute path is given as the parameter, checks to see if the first character is a /.
 if [[ ${1:0:1} == "/" ]]; then
 	destination=$1
 
-#An else statement which executes if a relative path is given as the parameter.
-#For the $destination, it will find the pwd and then append the parameter to the end of it.
+#If a relative path is given as the parameter.
 else
         destination=$(pwd)$"/"$1
 fi
 
-#An if statement that executes when the file already exists.
-#Currently it will alert the user and exit. WORK ON HAVING IT PROMPT THE USER TO EITHER OVERRIDE OR APPEND.
+#If the file already exists.
 if [ -e "$destination" ]; then
 
 	echo "The file already exists."
 	exit
 fi
 
-#The bulk of the program. Here it will create the script, make it executeable, apply the template, and open it in nano.
-#MUCH MORE CAN BE ADDED, WORK ON ADDITIONS.
+#Create the script, make it executeable, apply the template, and open it in nano.
 touch "$destination"
 
 chmod +x "$destination"
