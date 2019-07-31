@@ -3,19 +3,17 @@
 set -e
 set -o pipefail
 
-#An if statement which executes when the config directory (.mkscript) is not found.
-#It will create the directory in the user's home folder and then add a default template.
-if [ ! -e ~/.mkscript ]; then #If .mkscript doesn't exist.
-	mkdir ~/.mkscript #Making the dir.
-	touch template.txt #Making the template file.
-	echo -e "#! /bin/bash\n\nset -u\nset -e\nset -o pipefail" >> ~/.mkscript/template.txt #Filling in the template file.
+#If the config directory (.mkscript) is not found.
+if [ ! -e ~/.mkscript ]; then
+	mkdir ~/.mkscript
+	touch template.txt.
+	echo -e "#! /bin/bash\n\nset -u\nset -e\nset -o pipefail" >> ~/.mkscript/template.txt
 
-	echo "First run, config directory created at ~/.mkscript." #Message to user.
-	echo "Find and edit file templetes there." #Message to user.
+	echo "First run, config directory created at ~/.mkscript."
+	echo "Find and edit file templetes there."
 fi
 
-#An if statement which executes if the command was run with no parameters.
-#Currently it will alert the user and then exit. WORK ON MAKING IT DISPLAY A HELPFILE IN THE FUTURE.
+#If the command was run with no parameters.
 if [ -z "$1" ]; then
 	echo "No filename specified."
 	exit
@@ -24,14 +22,12 @@ fi
 #An if statement which executes if an absolute path is given as the parameter, checks to see if the first character is a /.
 #It will set the $destination to be the parameter, exactly as entered.
 if [[ ${1:0:1} == "/" ]]; then
-	destination=$1 #Set the $destination.
-	#echo "This must be an absolute path." #Uncomment for debugging.
+	destination=$1
 
 #An else statement which executes if a relative path is given as the parameter.
 #For the $destination, it will find the pwd and then append the parameter to the end of it.
 else
-        destination=$(pwd)$"/"$1 #Set the $destination.
-	#echo "This must be a relative path." #Uncomment for debugging.
+        destination=$(pwd)$"/"$1
 fi
 
 #An if statement that executes when the file already exists.
@@ -51,5 +47,3 @@ chmod +x "$destination"
 cat ~/.mkscript/template.txt > "$destination"
 
 nano "$destination"
-
-
