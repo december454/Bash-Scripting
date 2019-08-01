@@ -4,4 +4,16 @@ set -u
 set -e
 set -o pipefail
 
+while getopts ":ab" option; do
+	case ${option} in
+		a ) echo "Option -A has been chosen"
+			;;
+		b ) echo "Option -B has been chosen"
+			;;
+		\? ) echo "Usage: args-test [-a] [-b]"
+			;;
+	esac
+done
+
+echo $1
 
