@@ -1,0 +1,21 @@
+#! /bin/bash
+
+echo "Hello World"
+
+helloWorldVar="This variable reamains from the script."
+
+exit
+
+
+
+
+
+exit    #Exit with the return value of the last command.
+exit $? #Exit with the return value of the last command.
+exit 0  #default exit code, no errors.
+
+Running Scripts:
+	./helloWorld
+	source helloWorld
+	. helloWorld
+	bash helloWorld

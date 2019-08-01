@@ -1,0 +1,18 @@
+#! /bin/bash
+
+#Notes:
+# $#		Number of args the script was run with
+# $0		The filename of the script
+# $1...$n	Script arguments
+
+#Finding the filename.
+theFileName=$0
+echo $theFileName
+
+#Finding how many arguments the script was called with.
+numArgs=$#
+
+#Listing out the arguments.
+echo "The first three args were ${1}, ${2}, and ${3}."
+
+echo "${5}     <--- trying to print an empty arg ($ 5)."
