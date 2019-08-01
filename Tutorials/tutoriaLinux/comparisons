@@ -1,0 +1,82 @@
+#! /bin/bash
+
+#Testing and control flow with if, [ and [[, and/or
+
+numRequiredArgs=2
+
+#Are there two or more arguments?
+if [[ $# -lt numRequiredArgs ]]; then
+	echo "Not enough arguments. Call this script with ./{$0} <name> <number>"
+fi
+
+##########################################################
+# Helpers:
+# && and
+# || or
+
+#Paste in terminal:
+# echo "hello" || echo "This won't happen"
+# $(ls FileThatDoesNotExist) || echo "This happens if the first thing fails."
+# echo $(pwd) && echo "This ALSO happens."
+
+##########################################################
+#Strings
+string1="a"
+string2="b"
+
+#Equality ( = and != ) (ASCII Comparison)
+if [ "$string1" = "$string2" ]; then
+	echo "${string1} is equal to ${string2}!"
+fi
+
+if [ "$string1" != "$string2" ]; then
+	echo "${string1} is NOT equal to ${string2}!"
+fi
+
+#Null (-n) or Zero length (-z)
+notNull="this is something; it is not null."
+isNull=""
+
+if [ -n "$notNull" ]; then
+	echo "This is not null"
+fi
+
+if [ -z "$isNull" ]; then
+	echo "This is null/zeroLength"
+fi
+
+##########################################################
+#Integers
+
+int1=1
+int2=7
+
+#equal and not equal
+if [ $int1 -eq $int2 ]; then
+	echo "${int1} is equal to ${int2}."
+fi
+if [ $int1 -ne $int2 ]; then
+	echo "${int1} is NOT equal to ${int2}."
+fi
+
+#Greater than, less than or equal.
+# -gt, -lt, -ge, -le
+if [ $int1 -gt $int2 ]; then
+	echo "${int1} is greater than ${int2}."
+fi
+if [ $int1 -lt $int2 ]; then
+	echo "${int1} is less than or equal to ${int2}."
+fi
+
+#String comparison operators can be used with double parantheses.
+if (( $int1 == b$int2 )); then
+	echo "${int1} is equal to ${int2}"
+fi
+
+# (())	Parentheses can be used.
+# ==	Is equal to
+# !=	Is NOT equal to
+# <	Is less than
+# <=	Is less than or equal to
+# >	Is greater than
+# >=	Is greater than or equal to

@@ -1,0 +1,26 @@
+#! /bin/bash
+
+#brackets [] equal test, test the condition inside for truth.
+#use double brackets [[ condition ]] (new test) for bash, not as portable.
+#avoid single brackets [ condition ] (old test) for older shelss like sh, more portable.
+
+name=$1
+
+greeting="Hello Dave"
+hatTip="**Tips hat**"
+headShake="**Shakes Head**"
+
+#If your name is Dave
+if [ "$name" = "Dave" ]; then
+	#greet
+	echo $greeting
+
+#If your name is Steve
+elif [ "$name" = "Steve" ]; then
+	#Tip hat
+	echo $hatTip
+#Else
+else
+	#Shake head
+	echo $headShake
+fi
