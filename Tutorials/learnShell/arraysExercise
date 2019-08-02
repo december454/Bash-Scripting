@@ -1,0 +1,29 @@
+#! /bin/bash
+
+# INSTRUCTIONS:
+#In this exercise, you will need to add numbers and strings to the correct arrays.
+#You must add the numbers 1,2, and 3 to the NUMBERS array, and the words 'hello' and 'world' to the STRINGS array.
+#You will also have to correct the values of the variable NumberOfNames and the variable second_name.
+#NumberOfNames should hold the total number of names in the NAMES array, using the $# special variable.
+#Variable second_name should hold the second name in the NAMES array, using the brackets operator [ ].
+#Note that the index is zero-based, so if you want to access the second item in the list, its index will be 1.
+
+NAMES=( John Eric Jessica )
+
+# write your code here
+#Putting the three numbers in the array, separated by spaces.
+NUMBERS=(1 2 3)
+#Putting the two words into the array, separated by spcaes.
+STRINGS=(hello world)
+#Using a special variable to find the number of elements in the array.
+NumberOfNames=${#NAMES[@]}
+#Setting the variable to the second name in the array, index starts at zero.
+second_name=${NAMES[1]}
+
+#Using the * wildcard to print out every element  in each array.
+echo ${NUMBERS[*]}
+echo ${STRINGS[*]}
+#Printing out the number of names in the list using the previous variable.
+echo "The number of names listed in the NAMES array: $NumberOfNames"
+#Printing out the second anme in the array using the other variable from earlier.
+echo "The second name on the NAMES list is: $second_name"

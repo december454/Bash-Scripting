@@ -1,0 +1,33 @@
+#! /bin/bash
+
+# Arrays are initialized with a list of values inside of parenthesis () separated by spaces.
+# For exmple: arrayTest=(val1 val2 val3)
+
+theArray=("HP 50g" "HP 48GX" TI-92 TI-89 "Casio fx7000")
+
+echo "The array: " ${theArray[*]}
+
+#You can find the total number of elements in an array like this:
+numElements=${#theArray[@]}
+echo "The number of elements in the array: " "$numElements"
+
+# You can access elements in the array using their numeric index. The index starts at zero.
+firstElement=${theArray[0]}
+echo "The first  value in the array [0]: " "$firstElement"
+echo "The second value in the array [1]: " "${theArray[1]}"
+
+#After creating an array, you can add more values to it. They are added to the next availible index.
+numElements=${#theArray[@]}
+echo "The current number of elements in the array: " "$numElements"
+echo "The last current last element in the array: " ${theArray[${#theArray[@]}-1]}
+
+#Like this:
+theArray[5]="SwissMicros DM42"
+
+
+numElements=${#theArray[@]}
+echo "The NEW number of elements in the array: " "$numElements"
+echo "The NEW current last element in the array: " ${theArray[${#theArray[@]}-1]}
+
+
+
