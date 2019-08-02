@@ -1,0 +1,5 @@
+#! /bin/bash
+
+# Hashtags mark comments, all to the right of a # is ignored.
+
+echo "Hello, World"
