@@ -1,0 +1,31 @@
+#! /bin/bash
+
+# Arguments can be passed to a script by listing them out behind the script's name when it is run, seperating them with spaces.
+# For example ./script.sh arg1 arg2 arg3
+
+# Each argument becomes a variable in the script. The fisrt arg is $1, the second is $2, and so on all the way to $9.
+# The variable $0 holds the name of the script being run.
+
+# Using the variable for the name of the script.
+echo "The name of this script is: $0"
+
+echo
+
+#Printing out all of the arguments sent to the script.
+echo 'The 1st argument ($1) was:' "$1"
+
+echo 'The 2nd argument ($2) was:' "$2"
+
+echo 'The 3rd argument ($3) was:' "$3"
+
+echo 'The 4th argument ($4) was:' "$4"
+
+echo 'The 5th argument ($5) was:' "$5"
+
+echo 'The 6th argument ($6) was:' "$6"
+
+echo 'The 7th argument ($7) was:' "$7"
+
+echo 'The 8th argument ($8) was:' "$8"
+
+echo 'The 9th argument ($9) was:' "$9"
