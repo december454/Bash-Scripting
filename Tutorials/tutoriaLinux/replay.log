@@ -1,0 +1,1521 @@
+Script started on 2019-08-02 08:55:27-05:00 [TERM="xterm" TTY="/dev/pts/0" COLUMNS="157" LINES="63"]
+]0;griffinw@VAIO:~/Documents/Programming/Bash-Scripting/Tutorials/tutoriaLinux[01;32m[griffinw@VAIO[01;37m tutoriaLinux[01;32m]$[00m htop
+[?1049h[22;0;0t[1;63r(B[m[4l[?7h[?1h=[?25l[39;49m[?1006;1000h[39;49m(B[m[H[2J[2d  [36m1  [39m(B[0;1m[[30m[64X[2;71H0.0%[39m](B[m   [36mTasks: (B[0;1m[36m112(B[0m[36m, (B[0;1m[32m382(B[0m[32m thr[36m; (B[0;1m[32m1(B[0m[36m running[3;3H2  [39m(B[0;1m[[30m[64X[3;71H0.0%[39m](B[m   [36mLoad average: [39m(B[0;1m0.15 [36m0.11 (B[0m[36m0.14 [4;3H3  [39m(B[0;1m[[30m[64X[4;71H0.0%[39m](B[m   [36mUptime: (B[0;1m[36m00:36:47[5;3H(B[0m[36m4  [39m(B[0;1m[(B[0m[31m||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||100.0%[39m(B[0;1m][6;3H(B[0m[36mMem[39m(B[0;1m[(B[0m[32m||||||||||||||||[34m||[33m|||||||||||(B[0;1m[30m[28X[6;64H1.72G/7.71G[39m][7;3H(B[0m[36mSwp[39m(B[0;1m[[30m[60X[7;67H0K/8.80G[39m][9d(B[0m[30m[42m  PID USER      PRI  NI  VIRT   RES   SHR S [30m[46mCPU% [30m[42mMEM%   TIME+  Command[K[10d[30m[46m 3022 griffinw   20   0 13116  4916  3236 R 40.0  0.1  0:00.06 htop[K[11;5H[39;49m(B[m1 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 118M  9[39m(B[m968 [36m 7[39m(B[m536 S  0.0  0.1  0:00.85 /sbin/init[12;3H234 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 155M 76[39m(B[m292 [36m75[39m(B[m004 S  0.0  0.9  0:00.64 /usr/lib/systemd/systemd-journald[13;3H250 (B[0;1m[30mroot      [39m(B[m 20   0 [36m78[39m(B[m096 [36m 1[39m(B[m280 [36m 1[39m(B[m128 S  0.0  0.0  0:00.00 /usr/bin/lvmetad -f[14;3H259 (B[0;1m[30mroot      [39m(B[m 20   0 [36m39[39m(B[m192 [36m 7[39m(B[m980 [36m 6[39m(B[m356 S  0.0  0.1  0:00.41 /usr/lib/systemd/systemd-udevd[15;3H488 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 310M 10[39m(B[m088 [36m 8[39m(B[m620 S  0.0  0.1  0:00.00 [32m/usr/bin/ModemManager[16;3H[39m(B[m492 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 310M 10[39m(B[m088 [36m 8[39m(B[m620 S  0.0  0.1  0:00.00 [32m/usr/bin/ModemManager[17;3H[39m(B[m475 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 310M 10[39m(B[m088 [36m 8[39m(B[m620 S  0.0  0.1  0:00.07 /usr/bin/ModemManager[18;3H476 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 8[39m(B[m416 [36m 2[39m(B[m544 [36m 2[39m(B[m240 S  0.0  0.0  0:00.00 /usr/bin/crond -n[19;3H481 (B[0;1m[30mroot      [39m(B[m 20   0 [36m25[39m(B[m704 [36m 7[39m(B[m368 [36m 6[39m(B[m340 S  0.0  0.1  0:00.44 /usr/lib/systemd/systemd-logind[20;3H482 (B[0;1m[30mdbus      [39m(B[m 20   0 [36m11[39m(B[m952 [36m 5[39m(B[m200 [36m 3[39m(B[m512 S  0.0  0.1  0:01.60 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --s[21;3H491 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 603M 20[39m(B[m200 [36m16[39m(B[m080 S  0.0  0.2  0:00.05 [32m/usr/bin/NetworkManager --no-daemon[22;3H[39m(B[m497 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 603M 20[39m(B[m200 [36m16[39m(B[m080 S  0.0  0.2  0:00.40 [32m/usr/bin/NetworkManager --no-daemon[23;3H[39m(B[m483 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 603M 20[39m(B[m200 [36m16[39m(B[m080 S  0.0  0.2  0:01.81 /usr/bin/NetworkManager --no-daemon[24;3H484 (B[0;1m[30mavahi     [39m(B[m 20   0 [36m10[39m(B[m612 [36m 3[39m(B[m884 [36m 3[39m(B[m492 S  0.0  0.0  0:00.07 avahi-daemon: running [VAIO.local][25;3H493 (B[0;1m[30mavahi     [39m(B[m 20   0 [36m10[39m(B[m488   348     0 S  0.0  0.0  0:00.00 avahi-daemon: chroot helper[26;3H506 (B[0;1m[30mpolkitd   [39m(B[m 20   0 [36m1624M 22[39m(B[m548 [36m15[39m(B[m656 S  0.0  0.3  0:00.00 [32m/usr/lib/polkit-1/polkitd --no-debug[27;3H[39m(B[m507 (B[0;1m[30mpolkitd   [39m(B[m 20   0 [36m1624M 22[39m(B[m548 [36m15[39m(B[m656 S  0.0  0.3  0:00.16 [32m/usr/lib/polkit-1/polkitd --no-debug[28;3H[39m(B[m509 (B[0;1m[30mpolkitd   [39m(B[m 20   0 [36m1624M 22[39m(B[m548 [36m15[39m(B[m656 S  0.0  0.3  0:00.00 [32m/usr/lib/polkit-1/polkitd --no-debug[29;3H[39m(B[m510 (B[0;1m[30mpolkitd   [39m(B[m 20   0 [36m1624M 22[39m(B[m548 [36m15[39m(B[m656 S  0.0  0.3  0:00.00 [32m/usr/lib/polkit-1/polkitd --no-debug[30;3H[39m(B[m511 (B[0;1m[30mpolkitd   [39m(B[m 20   0 [36m1624M 22[39m(B[m548 [36m15[39m(B[m656 S  0.0  0.3  0:00.00 [32m/usr/lib/polkit-1/polkitd --no-debug[31;3H[39m(B[m512 (B[0;1m[30mpolkitd   [39m(B[m 20   0 [36m1624M 22[39m(B[m548 [36m15[39m(B[m656 S  0.0  0.3  0:00.00 [32m/usr/lib/polkit-1/polkitd --no-debug[32;3H[39m(B[m516 (B[0;1m[30mpolkitd   [39m(B[m 20   0 [36m1624M 22[39m(B[m548 [36m15[39m(B[m656 S  0.0  0.3  0:00.00 [32m/usr/lib/polkit-1/polkitd --no-debug[33;3H[39m(B[m494 (B[0;1m[30mpolkitd   [39m(B[m 20   0 [36m1624M 22[39m(B[m548 [36m15[39m(B[m656 S  0.0  0.3  0:00.39 /usr/lib/polkit-1/polkitd --no-debug[34;3H498 (B[0;1m[30mroot      [39m(B[m 20   0 [36m12[39m(B[m568 [36m 5[39m(B[m604 [36m 4[39m(B[m928 S  0.0  0.1  0:00.01 /usr/bin/sshd -D[35;3H499 (B[0;1m[30mroot      [39m(B[m 20   0 [36m46[39m(B[m488 [36m17[39m(B[m252 [36m 7[39m(B[m436 S  0.0  0.2  0:00.14 /usr/bin/cupsd -l[36;3H525 (B[0;1m[30mcolord    [39m(B[m 20   0 [36m 246M 13[39m(B[m888 [36m 8[39m(B[m656 S  0.0  0.2  0:00.00 [32m/usr/lib/colord[37;3H[39m(B[m527 (B[0;1m[30mcolord    [39m(B[m 20   0 [36m 246M 13[39m(B[m888 [36m 8[39m(B[m656 S  0.0  0.2  0:00.03 [32m/usr/lib/colord[38;3H[39m(B[m524 (B[0;1m[30mcolord    [39m(B[m 20   0 [36m 246M 13[39m(B[m888 [36m 8[39m(B[m656 S  0.0  0.2  0:00.22 /usr/lib/colord[39;3H537 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 233M  7[39m(B[m332 [36m 6[39m(B[m032 S  0.0  0.1  0:00.05 [32m/usr/lib/accounts-daemon[40;3H[39m(B[m539 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 233M  7[39m(B[m332 [36m 6[39m(B[m032 S  0.0  0.1  0:00.02 [32m/usr/lib/accounts-daemon[41;3H[39m(B[m534 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 233M  7[39m(B[m332 [36m 6[39m(B[m032 S  0.0  0.1  0:00.19 /usr/lib/accounts-daemon[42;3H555 (B[0;1m[30mroot      [39m(B[m 20   0 [36m12[39m(B[m260 [36m 5[39m(B[m220 [36m 4[39m(B[m644 S  0.0  0.1  0:00.03 /usr/lib/bluetooth/bluetoothd[43;3H590 (B[0;1m[30mroot      [39m(B[m 20   0 [36m17[39m(B[m284 [36m 7[39m(B[m504 [36m 6[39m(B[m596 S  0.0  0.1  0:00.15 /usr/bin/wpa_supplicant -u[44;3H823 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 231M  6[39m(B[m972 [36m 5[39m(B[m664 S  0.0  0.1  0:00.00 [32m/usr/bin/lightdm[45;3H[39m(B[m825 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 231M  6[39m(B[m972 [36m 5[39m(B[m664 S  0.0  0.1  0:00.02 [32m/usr/bin/lightdm[46;3H[39m(B[m822 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 231M  6[39m(B[m972 [36m 5[39m(B[m664 S  0.0  0.1  0:00.06 /usr/bin/lightdm[47;3H828 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 275M 46[39m(B[m112 [36m30[39m(B[m848 S  0.0  0.6  0:00.10 [32m/usr/lib/Xorg :0 -seat seat0 -auth /run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch[48;3H[39m(B[m829 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 275M 46[39m(B[m112 [36m30[39m(B[m848 S  0.0  0.6  0:00.00 [32m/usr/lib/Xorg :0 -seat seat0 -auth /run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch[49;3H[39m(B[m827 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 275M 46[39m(B[m112 [36m30[39m(B[m848 S  0.0  0.6  0:19.95 /usr/lib/Xorg :0 -seat seat0 -auth /run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch[50;3H884 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 194M  8[39m(B[m484 [36m 7[39m(B[m116 S  0.0  0.1  0:00.00 [32mlightdm --session-child 12 19[51;3H[39m(B[m885 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 194M  8[39m(B[m484 [36m 7[39m(B[m116 S  0.0  0.1  0:00.00 [32mlightdm --session-child 12 19[52;3H[39m(B[m878 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 194M  8[39m(B[m484 [36m 7[39m(B[m116 S  0.0  0.1  0:00.03 lightdm --session-child 12 19[53;3H888 griffinw   20   0 [36m31[39m(B[m476 [36m 8[39m(B[m920 [36m 7[39m(B[m332 S  0.0  0.1  0:00.09 /usr/lib/systemd/systemd --user[54;3H889 griffinw   20   0 [36m 151M  2[39m(B[m620     4 S  0.0  0.0  0:00.00 (sd-pam)[55;3H900 griffinw   20   0 [36m 7[39m(B[m104 [36m 3[39m(B[m388 [36m 2[39m(B[m932 S  0.0  0.0  0:00.02 /bin/sh /etc/xdg/xfce4/xinitrc -- /etc/X11/xinit/xserverrc[56;3H907 griffinw   20   0 [36m11[39m(B[m064 [36m 4[39m(B[m660 [36m 3[39m(B[m576 S  0.0  0.1  0:00.24 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --[57;3H916 griffinw   20   0 [36m 213M 19[39m(B[m184 [36m14[39m(B[m540 S  0.0  0.2  0:00.00 [32mxfce4-session[58;3H[39m(B[m917 griffinw   20   0 [36m 213M 19[39m(B[m184 [36m14[39m(B[m540 S  0.0  0.2  0:00.00 [32mxfce4-session[59;3H[39m(B[m915 griffinw   20   0 [36m 213M 19[39m(B[m184 [36m14[39m(B[m540 S  0.0  0.2  0:00.30 xfce4-session[60;3H920 griffinw   20   0 [36m 225M  5[39m(B[m692 [36m 4[39m(B[m780 S  0.0  0.1  0:00.00 [32m/usr/lib/xfce4/xfconf/xfconfd[61;3H[39m(B[m921 griffinw   20   0 [36m 225M  5[39m(B[m692 [36m 4[39m(B[m780 S  0.0  0.1  0:00.08 [32m/usr/lib/xfce4/xfconf/xfconfd[62;3H[39m(B[m919 griffinw   20   0 [36m 225M  5[39m(B[m692 [36m 4[39m(B[m780 S  0.0  0.1  0:00.15 /usr/lib/xfce4/xfconf/xfconfd[63dF1[30m[46mHelp  [39;49m(B[mF2[30m[46mSetup [39;49m(B[mF3[30m[46mSearch[39;49m(B[mF4[30m[46mFilter[39;49m(B[mF5[30m[46mTree  [39;49m(B[mF6[30m[46mSortBy[39;49m(B[mF7[30m[46mNice -[39;49m(B[mF8[30m[46mNice +[39;49m(B[mF9[30m[46mKill  [39;49m(B[mF10[30m[46mQuit[K[H[39;49m(B[m[10d 3022 griffinw   20   0 [36m13[39m(B[m116 [36m 4[39m(B[m916 [36m 3[39m(B[m236 [32mR [39m(B[m40.0  0.1  0:00.06 htop[K[11d[30m[46m    1 root       20   0  118M  9968  7536 S  0.0  0.1  0:00.85 /sbin/init[K[H[39;49m(B[m[4;94H(B[0;1m[36m8[11d[39m(B[m    1 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 118M  9[39m(B[m968 [36m 7[39m(B[m536 S  0.0  0.1  0:00.85 /sbin/init[K[12d[30m[46m  234 root       20   0  155M 76292 75004 S  0.0  0.9  0:00.64 /usr/lib/systemd/systemd-journald[K[H[39;49m(B[m[12d  234 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 155M 76[39m(B[m292 [36m75[39m(B[m004 S  0.0  0.9  0:00.64 /usr/lib/systemd/systemd-journald[K[13d[30m[46m  250 root       20   0 78096  1280  1128 S  0.0  0.0  0:00.00 /usr/bin/lvmetad -f[K[H[39;49m(B[m[13d  250 (B[0;1m[30mroot      [39m(B[m 20   0 [36m78[39m(B[m096 [36m 1[39m(B[m280 [36m 1[39m(B[m128 S  0.0  0.0  0:00.00 /usr/bin/lvmetad -f[K[14d[30m[46m  259 root       20   0 39192  7980  6356 S  0.0  0.1  0:00.41 /usr/lib/systemd/systemd-udevd[K[H[39;49m(B[m[14d  259 (B[0;1m[30mroot      [39m(B[m 20   0 [36m39[39m(B[m192 [36m 7[39m(B[m980 [36m 6[39m(B[m356 S  0.0  0.1  0:00.41 /usr/lib/systemd/systemd-udevd[K[15d[30m[46m  488 root       20   0  310M 10088  8620 S  0.0  0.1  0:00.00 /usr/bin/ModemManager[K[H[39;49m(B[m[15d  488 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 310M 10[39m(B[m088 [36m 8[39m(B[m620 S  0.0  0.1  0:00.00 [32m/usr/bin/ModemManager[39m(B[m[K[16d[30m[46m  492 root       20   0  310M 10088  8620 S  0.0  0.1  0:00.00 /usr/bin/ModemManager[K[H[39;49m(B[m[16d  492 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 310M 10[39m(B[m088 [36m 8[39m(B[m620 S  0.0  0.1  0:00.00 [32m/usr/bin/ModemManager[39m(B[m[K[17d[30m[46m  475 root       20   0  310M 10088  8620 S  0.0  0.1  0:00.07 /usr/bin/ModemManager[K[H[39;49m(B[m[17d  475 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 310M 10[39m(B[m088 [36m 8[39m(B[m620 S  0.0  0.1  0:00.07 /usr/bin/ModemManager[K[18d[30m[46m  476 root       20   0  8416  2544  2240 S  0.0  0.0  0:00.00 /usr/bin/crond -n[K[H[39;49m(B[m[18d  476 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 8[39m(B[m416 [36m 2[39m(B[m544 [36m 2[39m(B[m240 S  0.0  0.0  0:00.00 /usr/bin/crond -n[K[19d[30m[46m  481 root       20   0 25704  7368  6340 S  0.0  0.1  0:00.44 /usr/lib/systemd/systemd-logind[K[H[39;49m(B[m[19d  481 (B[0;1m[30mroot      [39m(B[m 20   0 [36m25[39m(B[m704 [36m 7[39m(B[m368 [36m 6[39m(B[m340 S  0.0  0.1  0:00.44 /usr/lib/systemd/systemd-logind[K[20d[30m[46m  482 dbus       20   0 11952  5200  3512 S  0.0  0.1  0:01.60 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --s[1;1H[39;49m(B[m[20d  482 (B[0;1m[30mdbus      [39m(B[m 20   0 [36m11[39m(B[m952 [36m 5[39m(B[m200 [36m 3[39m(B[m512 S  0.0  0.1  0:01.60 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --s[21;1H[30m[46m  491 root       20   0  603M 20200 16080 S  0.0  0.2  0:00.05 /usr/bin/NetworkManager --no-daemon[K[H[39;49m(B[m[21d  491 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 603M 20[39m(B[m200 [36m16[39m(B[m080 S  0.0  0.2  0:00.05 [32m/usr/bin/NetworkManager --no-daemon[39m(B[m[K[22d[30m[46m  497 root       20   0  603M 20200 16080 S  0.0  0.2  0:00.40 /usr/bin/NetworkManager --no-daemon[K[H[39;49m(B[m[22d  497 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 603M 20[39m(B[m200 [36m16[39m(B[m080 S  0.0  0.2  0:00.40 [32m/usr/bin/NetworkManager --no-daemon[39m(B[m[K[23d[30m[46m  483 root       20   0  603M 20200 16080 S  0.0  0.2  0:01.81 /usr/bin/NetworkManager --no-daemon[K[H[39;49m(B[m[23d  483 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 603M 20[39m(B[m200 [36m16[39m(B[m080 S  0.0  0.2  0:01.81 /usr/bin/NetworkManager --no-daemon[K[24d[30m[46m  484 avahi      20   0 10612  3884  3492 S  0.0  0.0  0:00.07 avahi-daemon: running [VAIO.local][K[H[39;49m(B[m[24d  484 (B[0;1m[30mavahi     [39m(B[m 20   0 [36m10[39m(B[m612 [36m 3[39m(B[m884 [36m 3[39m(B[m492 S  0.0  0.0  0:00.07 avahi-daemon: running [VAIO.local][K[25d[30m[46m  493 avahi      20   0 10488   348     0 S  0.0  0.0  0:00.00 avahi-daemon: chroot helper[K[H[39;49m(B[m[25d  493 (B[0;1m[30mavahi     [39m(B[m 20   0 [36m10[39m(B[m488   348     0 S  0.0  0.0  0:00.00 avahi-daemon: chroot helper[K[26d[30m[46m  506 polkitd    20   0 1624M 22548 15656 S  0.0  0.3  0:00.00 /usr/lib/polkit-1/polkitd --no-debug[K[H[39;49m(B[m[26d  506 (B[0;1m[30mpolkitd   [39m(B[m 20   0 [36m1624M 22[39m(B[m548 [36m15[39m(B[m656 S  0.0  0.3  0:00.00 [32m/usr/lib/polkit-1/polkitd --no-debug[39m(B[m[K[27d[30m[46m  507 polkitd    20   0 1624M 22548 15656 S  0.0  0.3  0:00.16 /usr/lib/polkit-1/polkitd --no-debug[K[H[39;49m(B[m[4;94H(B[0;1m[36m9[27d[39m(B[m  507 (B[0;1m[30mpolkitd   [39m(B[m 20   0 [36m1624M 22[39m(B[m548 [36m15[39m(B[m656 S  0.0  0.3  0:00.16 [32m/usr/lib/polkit-1/polkitd --no-debug[39m(B[m[K[28d[30m[46m  509 polkitd    20   0 1624M 22548 15656 S  0.0  0.3  0:00.00 /usr/lib/polkit-1/polkitd --no-debug[K[H[39;49m(B[m[2;7H[32m|[31m||[2;71H(B[0;1m[30m3.2[3;7H(B[0m[32m|||[31m|[3;71H(B[0;1m[30m4.6[4;7H(B[0m[32m|[31m|[4;71H(B[0;1m[30m2[5;7H(B[0m[32m||[31m|(B[0;1m[30m[61X[5;71H2.7%[10;45H[39m(B[m 5.3[10;61H14[28d  509 (B[0;1m[30mpolkitd   [39m(B[m 20   0 [36m1624M 22[39m(B[m548 [36m15[39m(B[m656 S  0.0  0.3  0:00.00 [32m/usr/lib/polkit-1/polkitd --no-debug[39m(B[m[K[29d[30m[46m  510 polkitd    20   0 1624M 22548 15656 S  0.0  0.3  0:00.00 /usr/lib/polkit-1/polkitd --no-debug[K[H[39;49m(B[m[29d  510 (B[0;1m[30mpolkitd   [39m(B[m 20   0 [36m1624M 22[39m(B[m548 [36m15[39m(B[m656 S  0.0  0.3  0:00.00 [32m/usr/lib/polkit-1/polkitd --no-debug[39m(B[m[K[30d[30m[46m  511 polkitd    20   0 1624M 22548 15656 S  0.0  0.3  0:00.00 /usr/lib/polkit-1/polkitd --no-debug[K[H[39;49m(B[m[30d  511 (B[0;1m[30mpolkitd   [39m(B[m 20   0 [36m1624M 22[39m(B[m548 [36m15[39m(B[m656 S  0.0  0.3  0:00.00 [32m/usr/lib/polkit-1/polkitd --no-debug[39m(B[m[K[31d[30m[46m  512 polkitd    20   0 1624M 22548 15656 S  0.0  0.3  0:00.00 /usr/lib/polkit-1/polkitd --no-debug[K[H[39;49m(B[m[31d  512 (B[0;1m[30mpolkitd   [39m(B[m 20   0 [36m1624M 22[39m(B[m548 [36m15[39m(B[m656 S  0.0  0.3  0:00.00 [32m/usr/lib/polkit-1/polkitd --no-debug[39m(B[m[K[32d[30m[46m  516 polkitd    20   0 1624M 22548 15656 S  0.0  0.3  0:00.00 /usr/lib/polkit-1/polkitd --no-debug[K[H[39;49m(B[m[32d  516 (B[0;1m[30mpolkitd   [39m(B[m 20   0 [36m1624M 22[39m(B[m548 [36m15[39m(B[m656 S  0.0  0.3  0:00.00 [32m/usr/lib/polkit-1/polkitd --no-debug[39m(B[m[K[33d[30m[46m  494 polkitd    20   0 1624M 22548 15656 S  0.0  0.3  0:00.39 /usr/lib/polkit-1/polkitd --no-debug[K[H[39;49m(B[m[33d  494 (B[0;1m[30mpolkitd   [39m(B[m 20   0 [36m1624M 22[39m(B[m548 [36m15[39m(B[m656 S  0.0  0.3  0:00.39 /usr/lib/polkit-1/polkitd --no-debug[K[34d[30m[46m  498 root       20   0 12568  5604  4928 S  0.0  0.1  0:00.01 /usr/bin/sshd -D[K[H[39;49m(B[m[34d  498 (B[0;1m[30mroot      [39m(B[m 20   0 [36m12[39m(B[m568 [36m 5[39m(B[m604 [36m 4[39m(B[m928 S  0.0  0.1  0:00.01 /usr/bin/sshd -D[K[35d[30m[46m  499 root       20   0 46488 17252  7436 S  0.0  0.2  0:00.14 /usr/bin/cupsd -l[K[H[39;49m(B[m[35d  499 (B[0;1m[30mroot      [39m(B[m 20   0 [36m46[39m(B[m488 [36m17[39m(B[m252 [36m 7[39m(B[m436 S  0.0  0.2  0:00.14 /usr/bin/cupsd -l[K[36d[30m[46m  525 colord     20   0  246M 13888  8656 S  0.0  0.2  0:00.00 /usr/lib/colord[K[H[39;49m(B[m[36d  525 (B[0;1m[30mcolord    [39m(B[m 20   0 [36m 246M 13[39m(B[m888 [36m 8[39m(B[m656 S  0.0  0.2  0:00.00 [32m/usr/lib/colord[39m(B[m[K[37d[30m[46m  527 colord     20   0  246M 13888  8656 S  0.0  0.2  0:00.03 /usr/lib/colord[K[H[39;49m(B[m[37d  527 (B[0;1m[30mcolord    [39m(B[m 20   0 [36m 246M 13[39m(B[m888 [36m 8[39m(B[m656 S  0.0  0.2  0:00.03 [32m/usr/lib/colord[39m(B[m[K[38d[30m[46m  524 colord     20   0  246M 13888  8656 S  0.0  0.2  0:00.22 /usr/lib/colord[K[H[39;49m(B[m[38d  524 (B[0;1m[30mcolord    [39m(B[m 20   0 [36m 246M 13[39m(B[m888 [36m 8[39m(B[m656 S  0.0  0.2  0:00.22 /usr/lib/colord[K[39d[30m[46m  537 root       20   0  233M  7332  6032 S  0.0  0.1  0:00.05 /usr/lib/accounts-daemon[K[H[39;49m(B[m[39d  537 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 233M  7[39m(B[m332 [36m 6[39m(B[m032 S  0.0  0.1  0:00.05 [32m/usr/lib/accounts-daemon[39m(B[m[K[40d[30m[46m  539 root       20   0  233M  7332  6032 S  0.0  0.1  0:00.02 /usr/lib/accounts-daemon[K[H[39;49m(B[m[40d  539 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 233M  7[39m(B[m332 [36m 6[39m(B[m032 S  0.0  0.1  0:00.02 [32m/usr/lib/accounts-daemon[39m(B[m[K[41d[30m[46m  534 root       20   0  233M  7332  6032 S  0.0  0.1  0:00.19 /usr/lib/accounts-daemon[K[H[39;49m(B[m[41d  534 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 233M  7[39m(B[m332 [36m 6[39m(B[m032 S  0.0  0.1  0:00.19 /usr/lib/accounts-daemon[K[42d[30m[46m  555 root       20   0 12260  5220  4644 S  0.0  0.1  0:00.03 /usr/lib/bluetooth/bluetoothd[K[H[39;49m(B[m[42d  555 (B[0;1m[30mroot      [39m(B[m 20   0 [36m12[39m(B[m260 [36m 5[39m(B[m220 [36m 4[39m(B[m644 S  0.0  0.1  0:00.03 /usr/lib/bluetooth/bluetoothd[K[43d[30m[46m  590 root       20   0 17284  7504  6596 S  0.0  0.1  0:00.15 /usr/bin/wpa_supplicant -u[K[H[39;49m(B[m[43d  590 (B[0;1m[30mroot      [39m(B[m 20   0 [36m17[39m(B[m284 [36m 7[39m(B[m504 [36m 6[39m(B[m596 S  0.0  0.1  0:00.15 /usr/bin/wpa_supplicant -u[K[44d[30m[46m  823 root       20   0  231M  6972  5664 S  0.0  0.1  0:00.00 /usr/bin/lightdm[K[H[39;49m(B[m[44d  823 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 231M  6[39m(B[m972 [36m 5[39m(B[m664 S  0.0  0.1  0:00.00 [32m/usr/bin/lightdm[39m(B[m[K[45d[30m[46m  825 root       20   0  231M  6972  5664 S  0.0  0.1  0:00.02 /usr/bin/lightdm[K[H[39;49m(B[m[45d  825 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 231M  6[39m(B[m972 [36m 5[39m(B[m664 S  0.0  0.1  0:00.02 [32m/usr/bin/lightdm[39m(B[m[K[46d[30m[46m  822 root       20   0  231M  6972  5664 S  0.0  0.1  0:00.06 /usr/bin/lightdm[K[H[39;49m(B[m[46d  822 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 231M  6[39m(B[m972 [36m 5[39m(B[m664 S  0.0  0.1  0:00.06 /usr/bin/lightdm[K[47d[30m[46m  828 root       20   0  275M 46112 30848 S  0.0  0.6  0:00.10 /usr/lib/Xorg :0 -seat seat0 -auth /run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch[K[H[39;49m(B[m[47d  828 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 275M 46[39m(B[m112 [36m30[39m(B[m848 S  0.0  0.6  0:00.10 [32m/usr/lib/Xorg :0 -seat seat0 -auth /run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch[39m(B[m[K[48d[30m[46m  829 root       20   0  275M 46112 30848 S  0.0  0.6  0:00.00 /usr/lib/Xorg :0 -seat seat0 -auth /run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch[K[H[39;49m(B[m[48d  829 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 275M 46[39m(B[m112 [36m30[39m(B[m848 S  0.0  0.6  0:00.00 [32m/usr/lib/Xorg :0 -seat seat0 -auth /run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch[39m(B[m[K[49d[30m[46m  827 root       20   0  275M 46112 30848 S  0.0  0.6  0:19.95 /usr/lib/Xorg :0 -seat seat0 -auth /run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch[K[H[39;49m(B[m[49d  827 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 275M 46[39m(B[m112 [36m30[39m(B[m848 S  0.0  0.6  0:19.95 /usr/lib/Xorg :0 -seat seat0 -auth /run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch[K[50d[30m[46m  884 root       20   0  194M  8484  7116 S  0.0  0.1  0:00.00 lightdm --session-child 12 19[K[H[39;49m(B[m[50d  884 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 194M  8[39m(B[m484 [36m 7[39m(B[m116 S  0.0  0.1  0:00.00 [32mlightdm --session-child 12 19[39m(B[m[K[51d[30m[46m  885 root       20   0  194M  8484  7116 S  0.0  0.1  0:00.00 lightdm --session-child 12 19[K[H[39;49m(B[m[51d  885 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 194M  8[39m(B[m484 [36m 7[39m(B[m116 S  0.0  0.1  0:00.00 [32mlightdm --session-child 12 19[39m(B[m[K[52d[30m[46m  878 root       20   0  194M  8484  7116 S  0.0  0.1  0:00.03 lightdm --session-child 12 19[K[H[39;49m(B[m[52d  878 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 194M  8[39m(B[m484 [36m 7[39m(B[m116 S  0.0  0.1  0:00.03 lightdm --session-child 12 19[K[53d[30m[46m  888 griffinw   20   0 31476  8920  7332 S  0.0  0.1  0:00.09 /usr/lib/systemd/systemd --user[K[H[39;49m(B[m[53d  888 griffinw   20   0 [36m31[39m(B[m476 [36m 8[39m(B[m920 [36m 7[39m(B[m332 S  0.0  0.1  0:00.09 /usr/lib/systemd/systemd --user[K[54d[30m[46m  889 griffinw   20   0  151M  2620     4 S  0.0  0.0  0:00.00 (sd-pam)[K[H[39;49m(B[m[54d  889 griffinw   20   0 [36m 151M  2[39m(B[m620     4 S  0.0  0.0  0:00.00 (sd-pam)[K[55d[30m[46m  900 griffinw   20   0  7104  3388  2932 S  0.0  0.0  0:00.02 /bin/sh /etc/xdg/xfce4/xinitrc -- /etc/X11/xinit/xserverrc[K[H[39;49m(B[m[55d  900 griffinw   20   0 [36m 7[39m(B[m104 [36m 3[39m(B[m388 [36m 2[39m(B[m932 S  0.0  0.0  0:00.02 /bin/sh /etc/xdg/xfce4/xinitrc -- /etc/X11/xinit/xserverrc[K[56d[30m[46m  907 griffinw   20   0 11064  4660  3576 S  0.0  0.1  0:00.24 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --[1;1H[39;49m(B[m[56d  907 griffinw   20   0 [36m11[39m(B[m064 [36m 4[39m(B[m660 [36m 3[39m(B[m576 S  0.0  0.1  0:00.24 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --[57;1H[30m[46m  916 griffinw   20   0  213M 19184 14540 S  0.0  0.2  0:00.00 xfce4-session[K[H[39;49m(B[m[4;93H(B[0;1m[36m50[57d[39m(B[m  916 griffinw   20   0 [36m 213M 19[39m(B[m184 [36m14[39m(B[m540 S  0.0  0.2  0:00.00 [32mxfce4-session[39m(B[m[K[58d[30m[46m  917 griffinw   20   0  213M 19184 14540 S  0.0  0.2  0:00.00 xfce4-session[K[H[39;49m(B[m[57d[30m[46m  916 griffinw   20   0  213M 19184 14540 S  0.0  0.2  0:00.00 xfce4-session[K[58d[39;49m(B[m  917 griffinw   20   0 [36m 213M 19[39m(B[m184 [36m14[39m(B[m540 S  0.0  0.2  0:00.00 [32mxfce4-session[39m(B[m[K[H[2;8H[32m|[2;73H(B[0;1m[30m1[3;8H(B[0m[31m||[3;73H(B[0;1m[30m3[4;8H(B[0m[32m||[31m||[4;71H(B[0;1m[30m6.2[5;9H(B[0m[32m|[31m|[5;71H(B[0;1m[30m4.9[10;48H[39m(B[m6[10;61H23[49;48H6[49;62H6[56d[30m[46m  907 griffinw   20   0 11064  4660  3576 S  0.0  0.1  0:00.24 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --[57;1H[39;49m(B[m  916 griffinw   20   0 [36m 213M 19[39m(B[m184 [36m14[39m(B[m540 S  0.0  0.2  0:00.00 [32mxfce4-session[39m(B[m[K[H[55d[30m[46m  900 griffinw   20   0  7104  3388  2932 S  0.0  0.0  0:00.02 /bin/sh /etc/xdg/xfce4/xinitrc -- /etc/X11/xinit/xserverrc[K[56d[39;49m(B[m  907 griffinw   20   0 [36m11[39m(B[m064 [36m 4[39m(B[m660 [36m 3[39m(B[m576 S  0.0  0.1  0:00.24 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --[1;1H[54d[30m[46m  889 griffinw   20   0  151M  2620     4 S  0.0  0.0  0:00.00 (sd-pam)[K[55d[39;49m(B[m  900 griffinw   20   0 [36m 7[39m(B[m104 [36m 3[39m(B[m388 [36m 2[39m(B[m932 S  0.0  0.0  0:00.02 /bin/sh /etc/xdg/xfce4/xinitrc -- /etc/X11/xinit/xserverrc[K[H[53d[30m[46m  888 griffinw   20   0 31476  8920  7332 S  0.0  0.1  0:00.09 /usr/lib/systemd/systemd --user[K[54d[39;49m(B[m  889 griffinw   20   0 [36m 151M  2[39m(B[m620     4 S  0.0  0.0  0:00.00 (sd-pam)[K[H[52d[30m[46m  878 root       20   0  194M  8484  7116 S  0.0  0.1  0:00.03 lightdm --session-child 12 19[K[53d[39;49m(B[m  888 griffinw   20   0 [36m31[39m(B[m476 [36m 8[39m(B[m920 [36m 7[39m(B[m332 S  0.0  0.1  0:00.09 /usr/lib/systemd/systemd --user[K[H[51d[30m[46m  885 root       20   0  194M  8484  7116 S  0.0  0.1  0:00.00 lightdm --session-child 12 19[K[52d[39;49m(B[m  878 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 194M  8[39m(B[m484 [36m 7[39m(B[m116 S  0.0  0.1  0:00.03 lightdm --session-child 12 19[K[H[50d[30m[46m  884 root       20   0  194M  8484  7116 S  0.0  0.1  0:00.00 lightdm --session-child 12 19[K[51d[39;49m(B[m  885 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 194M  8[39m(B[m484 [36m 7[39m(B[m116 S  0.0  0.1  0:00.00 [32mlightdm --session-child 12 19[39m(B[m[K[H[49d[30m[46m  827 root       20   0  275M 46112 30848 S  0.6  0.6  0:19.96 /usr/lib/Xorg :0 -seat seat0 -auth /run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch[K[50d[39;49m(B[m  884 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 194M  8[39m(B[m484 [36m 7[39m(B[m116 S  0.0  0.1  0:00.00 [32mlightdm --session-child 12 19[39m(B[m[K[H[48d[30m[46m  829 root       20   0  275M 46112 30848 S  0.0  0.6  0:00.00 /usr/lib/Xorg :0 -seat seat0 -auth /run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch[K[49d[39;49m(B[m  827 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 275M 46[39m(B[m112 [36m30[39m(B[m848 S  0.6  0.6  0:19.96 /usr/lib/Xorg :0 -seat seat0 -auth /run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch[K[H[47d[30m[46m  828 root       20   0  275M 46112 30848 S  0.0  0.6  0:00.10 /usr/lib/Xorg :0 -seat seat0 -auth /run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch[K[48d[39;49m(B[m  829 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 275M 46[39m(B[m112 [36m30[39m(B[m848 S  0.0  0.6  0:00.00 [32m/usr/lib/Xorg :0 -seat seat0 -auth /run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch[39m(B[m[K[H[46d[30m[46m  822 root       20   0  231M  6972  5664 S  0.0  0.1  0:00.06 /usr/bin/lightdm[K[47d[39;49m(B[m  828 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 275M 46[39m(B[m112 [36m30[39m(B[m848 S  0.0  0.6  0:00.10 [32m/usr/lib/Xorg :0 -seat seat0 -auth /run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch[39m(B[m[K[H[4;94H(B[0;1m[36m1[45d(B[0m[30m[46m  825 root       20   0  231M  6972  5664 S  0.0  0.1  0:00.02 /usr/bin/lightdm[K[46d[39;49m(B[m  822 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 231M  6[39m(B[m972 [36m 5[39m(B[m664 S  0.0  0.1  0:00.06 /usr/bin/lightdm[K[H[44d[30m[46m  823 root       20   0  231M  6972  5664 S  0.0  0.1  0:00.00 /usr/bin/lightdm[K[45d[39;49m(B[m  825 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 231M  6[39m(B[m972 [36m 5[39m(B[m664 S  0.0  0.1  0:00.02 [32m/usr/bin/lightdm[39m(B[m[K[H[43d[30m[46m  590 root       20   0 17284  7504  6596 S  0.0  0.1  0:00.15 /usr/bin/wpa_supplicant -u[K[44d[39;49m(B[m  823 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 231M  6[39m(B[m972 [36m 5[39m(B[m664 S  0.0  0.1  0:00.00 [32m/usr/bin/lightdm[39m(B[m[K[H[42d[30m[46m  555 root       20   0 12260  5220  4644 S  0.0  0.1  0:00.03 /usr/lib/bluetooth/bluetoothd[K[43d[39;49m(B[m  590 (B[0;1m[30mroot      [39m(B[m 20   0 [36m17[39m(B[m284 [36m 7[39m(B[m504 [36m 6[39m(B[m596 S  0.0  0.1  0:00.15 /usr/bin/wpa_supplicant -u[K[H[41d[30m[46m  534 root       20   0  233M  7332  6032 S  0.0  0.1  0:00.19 /usr/lib/accounts-daemon[K[42d[39;49m(B[m  555 (B[0;1m[30mroot      [39m(B[m 20   0 [36m12[39m(B[m260 [36m 5[39m(B[m220 [36m 4[39m(B[m644 S  0.0  0.1  0:00.03 /usr/lib/bluetooth/bluetoothd[K[H[40d[30m[46m  539 root       20   0  233M  7332  6032 S  0.0  0.1  0:00.02 /usr/lib/accounts-daemon[K[41d[39;49m(B[m  534 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 233M  7[39m(B[m332 [36m 6[39m(B[m032 S  0.0  0.1  0:00.19 /usr/lib/accounts-daemon[K[H[39d[30m[46m  537 root       20   0  233M  7332  6032 S  0.0  0.1  0:00.05 /usr/lib/accounts-daemon[K[40d[39;49m(B[m  539 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 233M  7[39m(B[m332 [36m 6[39m(B[m032 S  0.0  0.1  0:00.02 [32m/usr/lib/accounts-daemon[39m(B[m[K[H[38d[30m[46m  524 colord     20   0  246M 13888  8656 S  0.0  0.2  0:00.22 /usr/lib/colord[K[39d[39;49m(B[m  537 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 233M  7[39m(B[m332 [36m 6[39m(B[m032 S  0.0  0.1  0:00.05 [32m/usr/lib/accounts-daemon[39m(B[m[K[H[37d[30m[46m  527 colord     20   0  246M 13888  8656 S  0.0  0.2  0:00.03 /usr/lib/colord[K[38d[39;49m(B[m  524 (B[0;1m[30mcolord    [39m(B[m 20   0 [36m 246M 13[39m(B[m888 [36m 8[39m(B[m656 S  0.0  0.2  0:00.22 /usr/lib/colord[K[H[36d[30m[46m  525 colord     20   0  246M 13888  8656 S  0.0  0.2  0:00.00 /usr/lib/colord[K[37d[39;49m(B[m  527 (B[0;1m[30mcolord    [39m(B[m 20   0 [36m 246M 13[39m(B[m888 [36m 8[39m(B[m656 S  0.0  0.2  0:00.03 [32m/usr/lib/colord[39m(B[m[K[H[35d[30m[46m  499 root       20   0 46488 17252  7436 S  0.0  0.2  0:00.14 /usr/bin/cupsd -l[K[36d[39;49m(B[m  525 (B[0;1m[30mcolord    [39m(B[m 20   0 [36m 246M 13[39m(B[m888 [36m 8[39m(B[m656 S  0.0  0.2  0:00.00 [32m/usr/lib/colord[39m(B[m[K[H[34d[30m[46m  498 root       20   0 12568  5604  4928 S  0.0  0.1  0:00.01 /usr/bin/sshd -D[K[35d[39;49m(B[m  499 (B[0;1m[30mroot      [39m(B[m 20   0 [36m46[39m(B[m488 [36m17[39m(B[m252 [36m 7[39m(B[m436 S  0.0  0.2  0:00.14 /usr/bin/cupsd -l[K[H[33d[30m[46m  494 polkitd    20   0 1624M 22548 15656 S  0.0  0.3  0:00.39 /usr/lib/polkit-1/polkitd --no-debug[K[34d[39;49m(B[m  498 (B[0;1m[30mroot      [39m(B[m 20   0 [36m12[39m(B[m568 [36m 5[39m(B[m604 [36m 4[39m(B[m928 S  0.0  0.1  0:00.01 /usr/bin/sshd -D[K[H[32d[30m[46m  516 polkitd    20   0 1624M 22548 15656 S  0.0  0.3  0:00.00 /usr/lib/polkit-1/polkitd --no-debug[K[33d[39;49m(B[m  494 (B[0;1m[30mpolkitd   [39m(B[m 20   0 [36m1624M 22[39m(B[m548 [36m15[39m(B[m656 S  0.0  0.3  0:00.39 /usr/lib/polkit-1/polkitd --no-debug[K[H[31d[30m[46m  512 polkitd    20   0 1624M 22548 15656 S  0.0  0.3  0:00.00 /usr/lib/polkit-1/polkitd --no-debug[K[32d[39;49m(B[m  516 (B[0;1m[30mpolkitd   [39m(B[m 20   0 [36m1624M 22[39m(B[m548 [36m15[39m(B[m656 S  0.0  0.3  0:00.00 [32m/usr/lib/polkit-1/polkitd --no-debug[39m(B[m[K[H[30d[30m[46m  511 polkitd    20   0 1624M 22548 15656 S  0.0  0.3  0:00.00 /usr/lib/polkit-1/polkitd --no-debug[K[31d[39;49m(B[m  512 (B[0;1m[30mpolkitd   [39m(B[m 20   0 [36m1624M 22[39m(B[m548 [36m15[39m(B[m656 S  0.0  0.3  0:00.00 [32m/usr/lib/polkit-1/polkitd --no-debug[39m(B[m[K[H[29d[30m[46m  510 polkitd    20   0 1624M 22548 15656 S  0.0  0.3  0:00.00 /usr/lib/polkit-1/polkitd --no-debug[K[30d[39;49m(B[m  511 (B[0;1m[30mpolkitd   [39m(B[m 20   0 [36m1624M 22[39m(B[m548 [36m15[39m(B[m656 S  0.0  0.3  0:00.00 [32m/usr/lib/polkit-1/polkitd --no-debug[39m(B[m[K[H[28d[30m[46m  509 polkitd    20   0 1624M 22548 15656 S  0.0  0.3  0:00.00 /usr/lib/polkit-1/polkitd --no-debug[K[29d[39;49m(B[m  510 (B[0;1m[30mpolkitd   [39m(B[m 20   0 [36m1624M 22[39m(B[m548 [36m15[39m(B[m656 S  0.0  0.3  0:00.00 [32m/usr/lib/polkit-1/polkitd --no-debug[39m(B[m[K[H[27d[30m[46m  507 polkitd    20   0 1624M 22548 15656 S  0.0  0.3  0:00.16 /usr/lib/polkit-1/polkitd --no-debug[K[28d[39;49m(B[m  509 (B[0;1m[30mpolkitd   [39m(B[m 20   0 [36m1624M 22[39m(B[m548 [36m15[39m(B[m656 S  0.0  0.3  0:00.00 [32m/usr/lib/polkit-1/polkitd --no-debug[39m(B[m[K[H[26d[30m[46m  506 polkitd    20   0 1624M 22548 15656 S  0.0  0.3  0:00.00 /usr/lib/polkit-1/polkitd --no-debug[K[27d[39;49m(B[m  507 (B[0;1m[30mpolkitd   [39m(B[m 20   0 [36m1624M 22[39m(B[m548 [36m15[39m(B[m656 S  0.0  0.3  0:00.16 [32m/usr/lib/polkit-1/polkitd --no-debug[39m(B[m[K[H[25d[30m[46m  493 avahi      20   0 10488   348     0 S  0.0  0.0  0:00.00 avahi-daemon: chroot helper[K[26d[39;49m(B[m  506 (B[0;1m[30mpolkitd   [39m(B[m 20   0 [36m1624M 22[39m(B[m548 [36m15[39m(B[m656 S  0.0  0.3  0:00.00 [32m/usr/lib/polkit-1/polkitd --no-debug[39m(B[m[K[H[24d[30m[46m  484 avahi      20   0 10612  3884  3492 S  0.0  0.0  0:00.07 avahi-daemon: running [VAIO.local][K[25d[39;49m(B[m  493 (B[0;1m[30mavahi     [39m(B[m 20   0 [36m10[39m(B[m488   348     0 S  0.0  0.0  0:00.00 avahi-daemon: chroot helper[K[H[23d[30m[46m  483 root       20   0  603M 20200 16080 S  0.0  0.2  0:01.81 /usr/bin/NetworkManager --no-daemon[K[24d[39;49m(B[m  484 (B[0;1m[30mavahi     [39m(B[m 20   0 [36m10[39m(B[m612 [36m 3[39m(B[m884 [36m 3[39m(B[m492 S  0.0  0.0  0:00.07 avahi-daemon: running [VAIO.local][K[H[3;95H(B[0;1m21 [36m0.12[22d(B[0m[30m[46m  497 root       20   0  603M 20200 16080 S  0.0  0.2  0:00.40 /usr/bin/NetworkManager --no-daemon[K[23d[39;49m(B[m  483 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 603M 20[39m(B[m200 [36m16[39m(B[m080 S  0.0  0.2  0:01.81 /usr/bin/NetworkManager --no-daemon[K[H[21d[30m[46m  491 root       20   0  603M 20200 16080 S  0.0  0.2  0:00.05 /usr/bin/NetworkManager --no-daemon[K[22d[39;49m(B[m  497 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 603M 20[39m(B[m200 [36m16[39m(B[m080 S  0.0  0.2  0:00.40 [32m/usr/bin/NetworkManager --no-daemon[39m(B[m[K[H[20d[30m[46m  482 dbus       20   0 11952  5200  3512 S  0.0  0.1  0:01.60 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --s[21;1H[39;49m(B[m  491 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 603M 20[39m(B[m200 [36m16[39m(B[m080 S  0.0  0.2  0:00.05 [32m/usr/bin/NetworkManager --no-daemon[39m(B[m[K[H[63d[J[?12l[?25h[?1006;1000l[63;1H[?1049l[23;0;0t[?1l>]0;griffinw@VAIO:~/Documents/Programming/Bash-Scripting/Tutorials/tutoriaLinux[01;32m[griffinw@VAIO[01;37m tutoriaLinux[01;32m]$[00m sl
+[?1049h[22;0;0t[1;63r(B[m[4l[?7h[?25l[H[2J[34;157H_[34;156H_
+|[28;157H_[31;157H|[32;157H|[33;157H|[34;155H__/[35;156H|/[36;157H\[28;156H_D[29;157H|[30;157H/[31;156H|[K
+|[K
+|/[34;1H[1P
+[155G|/-[36;156H\_[28;1H[1P
+[156G|([30;156H/[K
+|[K
+| _[33;1H[1P
+[153G__/ =[35;154H|/-=[36;155H\_/[28;154H_D _[29;155H|(_[30;155H/[K
+|[K
+| _
+|/ |[34;152H__/ =|[35;153H|/-=|[36;1H[1P[27;157H=[28;153H_D _|[29;154H|(_)[30;154H/[K
+|[K
+| _
+[1P
+[1P
+[152G|/-=|_[36;1H[1P[26;157H([27;156H=
+[1P
+[153G|(_)-[30;153H/[K
+|[K
+| _
+[1P
+[150G__/ =| o[35;151H|/-=|_
+[1P[27;155H=
+[1P
+[152G|(_)-
+[152G/[K
+|[K
+| _
+[1P
+[1P
+[150G|/-=|_
+[1P[27;154H=
+[150G_D _|  |[29;151H|(_)-
+[151G/     |[31;150H|      |[32;150H| _
+|/ |   |[34;148H__/ =| o |[35;149H|/-=|___|[36;1H[1P[27d[1P[28;149H_D _|  |_[29;1H[1P
+[1P
+[1P[32;149H| _
+|/ |   |-[34;147H__/ =| o |=[35;148H|/-=|___|=[36;1H[1P[24;155H(@@[26;153H(   )[27;1H[1P[28;148H_D _|  |_
+[1P
+[1P
+[1P[32;148H| _
+|/ |   |-[34;146H__/ =| o |=-[35;1H[1P[36;148H\_/      \[27;1H[1P[28;147H_D _|  |_[29;148H|(_)---  |[30;148H/     |  |[31;147H|      |  |[32;147H| _[157G|[33;147H|/ |   |-[34;145H__/ =| o |=-~[35;1H[1P[36;147H\_/      \_[27;1H[1P[28;146H_D _|  |_
+[1P
+[1P
+[1P[32;146H| _[156G|_[33;146H|/ |   |-[34;144H__/ =| o |=-~
+[1P[36;146H\_/      \_[27d[1P[28;145H_D _|  |_
+[1P
+[1P
+[1P[32;145H| _[155G|_[33;145H|/ |   |-[34;143H__/ =| o |=-~O=[35;1H[1P[36;145H\_/      \__/[23;154H(@@@[24;151H(    )[K[26;149H(@@@)[K
+[1P[28;144H_D _|  |_
+[1P
+[1P
+[1P[32;144H| _[154G|_[33;144H|/ |   |-[34;142H__/ =| o |=-O==[35;143H|/-=|___|=    |[36;1H[1P[27d[1P[28;143H_D _|  |_[29;144H|(_)---  |   H[30;144H/     |  |   H[31;143H|      |  |   H[32;143H| _[153G|___H[33;143H|/ |   |-[34;141H__/ =| o |=-~~\[K[35;142H|/-=|___|=O=====[36;1H[1P[27d[1P[28;142H_D _|  |_[157G/[29;143H|(_)---  |   H\[30;1H[1P
+[1P[32;142H| _[152G|___H_[33;142H|/ |   |-[34;140H__/ =| o |=-~~\  /[35;141H|/-=|___|=    ||[K[36;142H\_/      \O=====[27;145H==== [157G_[28;1H[1P[29;142H|(_)---  |   H\_[30;1H[1P
+[1P[32;141H| _[151G|___H_[33;141H|/ |   |-[34;139H__/ =| o |=-~~\  /~[35;1H[1P[36;141H\_/      \_[1;23r[23;1H
+[1;63r[23;150H(    )[24;147H(@@@@)[K[26;145H(   )[K
+[144G==== [156G_
+[1P[29;141H|(_)---  |   H\_[30;141H/     |  |   H  |[31;140H|      |  |   H  |[32;140H| _[150G|___H__/[33;140H|/ |   |-[34;138H__/ =| o |=-~~\  /~[35;139H|/-=|___|=   O=====[36;140H\_/      \__/  \__[27;143H==== [155G_
+[1P[29;140H|(_)---  |   H\_
+[1P[31;139H|      |  |   H  |_[32;139H| _[149G|___H__/_[33;139H|/ |   |-[34;137H__/ =| o |=-~O=====O=[35;138H|/-=|___|=    ||[K[36;139H\_/      \__/  \__/[27;142H==== [154G_
+[1P[29;139H|(_)---  |   H\_
+[1P[31;138H|      |  |   H  |_[32;138H| _[148G|___H__/_[33;138H|/ |   |-[157GI[34;136H__/ =| o |=-O=====O==[35;137H|/-=|___|=    ||    |[36;1H[1P[27;141H==== [153G_
+[1P[29;138H|(_)---  |   H\_[30;138H/     |  |   H  |  |[31;137H|      |  |   H  |__-[32;137H| _[147G|___H__/__|[33;137H|/ |   |-[156GI_[34;135H__/ =| o |=-~~\  /~~\[K[35;136H|/-=|___|=O=====O=====[36;1H[1P[21;155H(@@[22;150H(   )[K[23;146H(@@@@)[K[24;143H(    )[K[26;141H(@@@)[K
+[140G==== [152G_
+[1P[29;137H|(_)---  |   H\_
+[1P[31;136H|      |  |   H  |__-[32;136H| _[146G|___H__/__|_[33;136H|/ |   |-[155GI_[34;134H__/ =| o |=-~~\  /~~\  /[35;135H|/-=|___|=    ||    ||[K[36;136H\_/      \O=====O=====[27;139H==== [151G_
+[1P[29;136H|(_)---  |   H\_
+[1P[31;135H|      |  |   H  |__-[32;135H| _[145G|___H__/__|_[33;135H|/ |   |-[154GI_[34;133H__/ =| o |=-~~\  /~~\  /~[35;1H[1P[36;135H\_/      \_[27;138H==== [150G_
+[1P[29;135H|(_)---  |   H\_
+[1P[31;134H|      |  |   H  |__-[32;134H| _[144G|___H__/__|_[33;134H|/ |   |-[153GI_[34;132H__/ =| o |=-~~\  /~~\  /~[35;133H|/-=|___|=   O=====O=====[36;134H\_/      \__/  \__/  \__[27;1H[1P[28;133H_D _|  |_[148G/ [157G\[29;134H|(_)---  |   H\_[157G/[30;1H[1P[31;133H|      |  |   H  |__-[32;133H| _[143G|___H__/__|_[33;133H|/ |   |-[152GI_[34;131H__/ =| o |=-~O=====O=====O=[35;132H|/-=|___|=    ||    ||[K[36;133H\_/      \__/  \__/  \__/[21;151H(  ) ([22;146H(@@@)[K[23;142H(    )[K[24;139H(@@@@)[K[26;137H(   )[K
+[1P[28;132H_D _|  |_[147G/ [156G\_[29;1H[1P
+[1P[31;132H|      |  |   H  |__-[32;132H| _[142G|___H__/__|_[33;132H|/ |   |-[151GI_____I[34;130H__/ =| o |=-O=====O=====O==[35;131H|/-=|___|=    ||    ||    |[36;1H[1P[27d[1P[28;131H_D _|  |_[146G/ [155G\_[29;132H|(_)---  |   H\_[155G/ |[30;132H/     |  |   H  |  |     |[31;131H|      |  |   H  |__-[32;131H| _[141G|___H__/__|_____/[33;1H[1P[34;129H__/ =| o |=-~~\  /~~\  /~~\[K[35;130H|/-=|___|=O=====O=====O=====[36;1H[1P[27d[1P[28;130H_D _|  |_[145G/ [154G\__I[29;1H[1P
+[1P[31;130H|      |  |   H  |__-[32;130H| _[140G|___H__/__|_____/[[33;130H|/ |   |-[33;149HI_____I [[34;128H__/ =| o |=-~~\  /~~\  /~~\  /[35;129H|/-=|___|=    ||    ||    ||[K[36;130H\_/      \O=====O=====O=====[27;1H[1P[28;129H_D _|  |_[144G/ [153G\__I_[29;1H[1P
+[1P[31;129H|      |  |   H  |__-[32;129H| _[139G|___H__/__|_____/[][33;129H|/ |   |-[33;148HI_____I [][34;127H__/ =| o |=-~~\  /~~\  /~~\  /~[35;1H[1P[36;129H\_/      \_[21;147H(@@) (  ) ([22;142H(   )[K[23;138H(@@@@)[K[24;135H(    )[K[26;133H(@@@)[K
+[1P[28;128H_D _|  |_[143G/ [152G\__I_I[29;1H[1P
+[1P[31;128H|      |  |   H  |__-[32;128H| _[138G|___H__/__|_____/[][[33;128H|/ |   |-[33;147HI_____I [][[34;126H__/ =| o |=-~~\  /~~\  /~~\  /~[35;127H|/-=|___|=   O=====O=====O=====[36;128H\_/      \__/  \__/  \__/  \__[27;1H[1P[28;127H_D _|  |_[142G/ [151G\__I_I_[29;128H|(_)---  |   H\_[151G/ |   |[30;128H/     |  |   H  |  |     |   |[31;127H|      |  |   H  |__-[32;127H| _[137G|___H__/__|_____/[][][33;127H|/ |   |-[33;146HI_____I [][][34;125H__/ =| o |=-~O=====O=====O=====O\[35;126H|/-=|___|=    ||    ||    ||[K[36;127H\_/      \__/  \__/  \__/  \__/[27;1H[1P[28;126H_D _|  |_[141G/ [150G\__I_I_
+[1P
+[1P[31;126H|      |  |   H  |__-[32;126H| _[136G|___H__/__|_____/[][]~[33;1H[1P[34;124H__/ =| o |=-O=====O=====O=====O \[K[35;125H|/-=|___|=    ||    ||    ||    |[36;1H[1P[27d[1P[28;125H_D _|  |_[140G/ [149G\__I_I_
+[1P
+[1P[31;125H|      |  |   H  |__-[32;125H| _[135G|___H__/__|_____/[][]~\[33;125H|/ |   |-[33;144HI_____I [][] [[34;123H__/ =| o |=-~~\  /~~\  /~~\  /~~\ _[35;124H|/-=|___|=O=====O=====O=====O   |_[36;1H[1P[21;143H(  ) (@@) ( )[K[22;138H(@@@)[K[23;134H(    )[K[24;131H(@@@@)[K[26;129H(   )[K
+[1P[28;124H_D _|  |_[139G/ [148G\__I_I_
+[1P
+[1P[31;124H|      |  |   H  |__-[32;124H| _[134G|___H__/__|_____/[][]~\_[33;124H|/ |   |-[33;143HI_____I [][] [][34;122H__/ =| o |=-~~\  /~~\  /~~\  /~~\ _[35;123H|/-=|___|=    ||    ||    ||    |_[36;124H\_/      \O=====O=====O=====O_/[K[27d[1P[28;123H_D _|  |_[138G/ [147G\__I_I_
+[1P
+[1P[31;123H|      |  |   H  |__-[32;123H| _[133G|___H__/__|_____/[][]~\_
+[1P[34;121H__/ =| o |=-~~\  /~~\  /~~\  /~~\ _[35;122H|/-=|___|=    ||    ||    ||    |_[36;123H\_/      \_[153G/[K[27d[1P[28;122H_D _|  |_[137G/ [146G\__I_I_____=[29;1H[1P
+[1P[31;122H|      |  |   H  |__-[32;122H| _[132G|___H__/__|_____/[][]~\_
+[1P[34;120H__/ =| o |=-~~\  /~~\  /~~\  /~~\ _[35;121H|/-=|___|=   O=====O=====O=====O|_[36;122H\_/      \__/  \__/  \__/  \__/[K[27d[1P[28;121H_D _|  |_[136G/ [145G\__I_I_____=
+[1P
+[1P[31;121H|      |  |   H  |__-[32;121H| _[131G|___H__/__|_____/[][]~\_[33;121H|/ |   |-[33;140HI_____I [][] []  D[34;119H__/ =| o |=-~O=====O=====O=====O\ ____Y[35;120H|/-=|___|=    ||    ||    ||    |_
+[1P[21;139H(@@) (  ) (@)  ( )[22;134H(   )[K[23;130H(@@@@)[K[24;127H(    )[K[26;125H(@@@)[K
+[1P[28;120H_D _|  |_[135G/ [144G\__I_I_____=
+[1P
+[1P[31;120H|      |  |   H  |__-[32;120H| _[130G|___H__/__|_____/[][]~\_
+[1P[34;118H__/ =| o |=-O=====O=====O=====O \ ____Y_[35;119H|/-=|___|=    ||    ||    ||    |_____/[36;120H\_/      \__/  \__/  \__/  \__/      \[27;1H[1P[28;119H_D _|  |_[134G/ [143G\__I_I_____===_[29;1H[1P
+[1P[31;119H|      |  |   H  |__-[32;119H| _[129G|___H__/__|_____/[][]~\_
+[1P[34;117H__/ =| o |=-~~\  /~~\  /~~\  /~~\ ____Y_[35;118H|/-=|___|=O=====O=====O=====O   |_____/~[36;119H\_/      \__/  \__/  \__/  \__/      \_[27;1H[1P[28;118H_D _|  |_[133G/ [142G\__I_I_____===_[29;119H|(_)---  |   H\_[142G/ |   | [157G=[30;1H[1P[31;118H|      |  |   H  |__-[32;118H| _[128G|___H__/__|_____/[][]~\_
+[1P[34;116H__/ =| o |=-~~\  /~~\  /~~\  /~~\ ____Y_[35;117H|/-=|___|=    ||    ||    ||    |_____/~\[36;118H\_/      \O=====O=====O=====O_/      \_/[27;121H==== [133G_[141G [157G_[28;117H_D _|  |_[132G/ [141G\__I_I_____===__|[29;118H|(_)---  |   H\_[141G/ |   | [156G=|[30;118H/     |  |   H  |  |     |   | [157G|[31;117H|      |  |   H  |__-[157G|[32;117H| _[127G|___H__/__|_____/[][]~\_[157G|[33;117H|/ |   |-[33;136HI_____I [][] []  D   |[34;115H__/ =| o |=-~~\  /~~\  /~~\  /~~\ ____Y_[35;116H|/-=|___|=    ||    ||    ||    |_____/~\_[36;117H\_/      \_[36;147H[1P[21;135H(  ) (@@) ( )  (@)  ([22;130H(@@@)[K[23;126H(    )[K[24;123H(@@@@)[K[26;121H(   )[K
+[120G==== [132G_[140G [156G_[28;116H_D _|  |_[131G/ [140G\__I_I_____===__|_[29;117H|(_)---  |   H\_[140G/ |   | [155G=|_[30;117H/     |  |   H  |  |     |   | [156G|
+[1P
+[1P[33;116H|/ |   |-[33;135HI_____I [][] []  D   |=[34;114H__/ =| o |=-~~\  /~~\  /~~\  /~~\ ____Y_[35;115H|/-=|___|=   O=====O=====O=====O|_____/~\_[36;116H\_/      \__/  \__/  \__/  \__[1P[27;119H==== [131G_[139G [155G_[28;115H_D _|  |_[130G/ [139G\__I_I_____===__|_[29;116H|(_)---  |   H\_[139G/ |   | [154G=|_[30;116H/     |  |   H  |  |     |   | [155G||_[31;115H|      |  |   H  |__-[155G| [[32;1H[1P[33;115H|/ |   |-[33;134HI_____I [][] []  D   |=[34;113H__/ =| o |=-~O=====O=====O=====O\ ____Y_[35;114H|/-=|___|=    ||    ||    ||    |_____/~\_
+[1P[27;118H==== [130G_[138G [154G_[28;114H_D _|  |_[129G/ [138G\__I_I_____===__|_[29;115H|(_)---  |   H\_[138G/ |   | [153G=|_[30;115H/     |  |   H  |  |     |   | [154G||_|[31;114H|      |  |   H  |__-[154G| [_[32;1H[1P[33;114H|/ |   |-[33;133HI_____I [][] []  D   |=[34;112H__/ =| o |=-O=====O=====O=====O \ ____Y_[35;113H|/-=|___|=    ||    ||    ||    |_____/~\___/[36;1H[1P[27;117H==== [129G_[137G [153G_[28;113H_D _|  |_[128G/ [137G\__I_I_____===__|_
+[1P
+[1P[31;113H|      |  |   H  |__-[153G| [_
+[1P[33;113H|/ |   |-[33;132HI_____I [][] []  D   |=[34;111H__/ =| o |=-~~\  /~~\  /~~\  /~~\ ____Y_[35;112H|/-=|___|=O=====O=====O=====O[1P
+[1P[21;131H(@@) (  ) (@)  ( )  @@    ([22;126H(   )[K[23;122H(@@@@)[K[24;119H(    )[K[26;117H(@@@)[K
+[116G==== [128G_[136G [152G_[28;112H_D _|  |_[127G/ [136G\__I_I_____===__|_[29;113H|(_)---  |   H\_[136G/ |   | [151G=|___ _[30;113H/     |  |   H  |  |     |   | [152G||_| |[31;112H|      |  |   H  |__-[152G| [_
+[1P[33;112H|/ |   |-[33;131HI_____I [][] []  D   |=[34;110H__/ =| o |=-~~\  /~~\  /~~\  /~~\ ____Y_[35;111H|/-=|___|=    ||    ||    || [1P[36;112H\_/      \O=====O=====O=====O[1P[27;115H==== [127G_[135G [151G_[28;111H_D _|  |_[126G/ [135G\__I_I_____===__|_[29;112H|(_)---  |   H\_[135G/ |   | [150G=|___ _[30;112H/     |  |   H  |  |     |   | [151G||_| |_[31;111H|      |  |   H  |__-[151G| [___][32;1H[1P[33;111H|/ |   |-[33;130HI_____I [][] []  D   |=[34;109H__/ =| o |=-~~\  /~~\  /~~\  /~~\ ____Y_
+[1P[36;111H\_/      \_[36;141H[1P[27;114H==== [126G_[134G [150G_[28;110H_D _|  |_[125G/ [134G\__I_I_____===__|_[29;111H|(_)---  |   H\_[134G/ |   | [149G=|___ _[30;111H/     |  |   H  |  |     |   | [150G||_| |_|[31;1H[1P
+[1P[33;110H|/ |   |-[33;129HI_____I [][] []  D   |=[34;108H__/ =| o |=-~~\  /~~\  /~~\  /~~\ ____Y_[35;109H|/-=|___|=   O=====O=====O=====O[1P[36;110H\_/      \__/  \__/  \__/  \__[1P[27;113H==== [125G_[133G [27;149H_[28;109H_D _|  |_[124G/ [133G\__I_I_____===__|_[29;110H|(_)---  |   H\_[133G/ |   | [148G=|___ ___|[30;110H/     |  |   H  |  |     |   | [30;149H||_| |_|[31;109H|      |  |   H  |__-[31;149H| [___] |[32;109H| _[119G|___H__/__|_____/[][]~\_[149G| [157G|[33;109H|/ |   |-[33;128HI_____I [][] []  D   |=[157G|[34;107H__/ =| o |=-~O=====O=====O=====O\ ____Y_[157G|[35;108H|/-=|___|=    ||    ||    ||    [1P
+[1P[21;127H(  ) (@@) ( )  (@)  ()    @@[K[22;122H(@@@)[K[23;118H(    )[K[24;115H(@@@@)[K[26;113H(   )[K
+[112G==== [124G_[132G [27;148H_[28;108H_D _|  |_[123G/ [132G\__I_I_____===__|_
+[1P
+[1P
+[1P
+[1P[33;108H|/ |   |-[33;127HI_____I [][] []  D   |=[156G|_[34;106H__/ =| o |=-O=====O=====O=====O \ ____Y_[156G|_[35;1H[1P
+[1P[27;111H==== [123G_[131G [27;147H_[28;107H_D _|  |_[122G/ [131G\__I_I_____===__|_[157G|[29;1H[1P
+[1P
+[1P
+[1P[33;107H|/ |   |-[33;126HI_____I [][] []  D   |=[155G|_[34;105H__/ =| o |=-~~\  /~~\  /~~\  /~~\ ____Y_[155G|_[35;106H|/-=|___|=O=====O=====O=====O[1P
+[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P[33;106H|/ |   |-[33;125HI_____I [][] []  D   |=[154G|_[34;104H__/ =| o |=-~~\  /~~\  /~~\  /~~\ ____Y_[154G|__|[35;105H|/-=|___|=    ||    ||    || [1P[36;106H\_/      \O=====O=====O=====O[1P[27d[1P
+[1P
+[1P
+[1P[31;105H|      |  |   H  |__-[31;145H| [___] |   =[32;105H| _[115G|___H__/__|_____/[][]~\_[145G| [153G|   -[33;105H|/ |   |-[33;124HI_____I [][] []  D   |=[153G|_[34;103H__/ =| o |=-~~\  /~~\  /~~\  /~~\ ____Y_[153G|__|_[35;1H[1P[36;105H\_/      \_[36;135H[1P[21;123H(@@) (  ) (@)  ( )  @@    ()    @[22;118H(   )[K[23;114H(@@@@)[K[24;111H(    )[K[26;109H(@@@)[K
+[1P
+[1P
+[1P
+[1P[31;104H|      |  |   H  |__-[31;144H| [___] |   =|[32;104H| _[114G|___H__/__|_____/[][]~\_[144G| [152G|   -|[33;104H|/ |   |-[33;123HI_____I [][] []  D   |=[152G|____|[34;102H__/ =| o |=-~~\  /~~\  /~~\  /~~\ ____Y_[152G|__|_[35;103H|/-=|___|=   O=====O=====O=====O[1P[36;104H\_/      \__/  \__/  \__/  \__[1P[27d[1P
+[1P
+[1P[30;104H/     |  |   H  |  |     |   | [30;143H||_| |_||     _[31;1H[1P
+[1P[33;103H|/ |   |-[33;122HI_____I [][] []  D   |=[151G|____|_[34;101H__/ =| o |=-~O=====O=====O=====O\ ____Y_[151G|__|_[35;102H|/-=|___|=    ||    ||    ||    |_____/~\___/ [157G|[36;1H[1P[27d[1P
+[1P[29;103H|(_)---  |   H\_[126G/ |   | [141G=|___ ___|      _[30;103H/     |  |   H  |  |     |   | [30;142H||_| |_||     _|[31;1H[1P
+[1P[33;102H|/ |   |-[33;121HI_____I [][] []  D   |=[150G|____|_[34;100H__/ =| o |=-O=====O=====O=====O \ ____Y_[150G|__|_[35;101H|/-=|___|=    ||    ||    ||    |_____/~\___/ [156G|_[36;102H\_/      \__/  \__/  \__/  \__/      \_/ [157G\[27;1H[1P
+[1P[29;102H|(_)---  |   H\_[125G/ |   | [140G=|___ ___|      _
+[1P
+[1P
+[1P[33;101H|/ |   |-[33;120HI_____I [][] []  D   |=[149G|____|_[34;99H__/ =| o |=-~~\  /~~\  /~~\  /~~\ ____Y_[34;149H|__|_[35;100H|/-=|___|=O=====O=====O=====O   |_____/~\___/ [155G|_D[36;101H\_/      \__/  \__/  \__/  \__/      \_/ [156G\_[21;119H(  ) (@@) ( )  (@)  ()    @@    O     @[22;114H(@@@)[K[23;110H(    )[K[24;107H(@@@@)[K[26;105H(   )[K
+[1P
+[1P[29;101H|(_)---  |   H\_[124G/ |   | [139G=|___ ___|      _
+[1P
+[1P
+[1P[33;100H|/ |   |-[33;119HI_____I [][] []  D   |=[148G|____|_[34;98H__/ =| o |=-~~\  /~~\  /~~\  /~~\ ____Y_[34;148H|__|_[35;99H|/-=|___|=    ||    ||    ||    |_____/~\___/ [154G|_D_[36;100H\_/      \O=====O=====O=====O_/      \_/ [155G\_/[27;1H[1P
+[1P[29;100H|(_)---  |   H\_[123G/ |   | [138G=|___ ___|      _
+[1P
+[1P
+[1P[33;99H|/ |   |-[33;118HI_____I [][] []  D   |=[147G|____|_[34;97H__/ =| o |=-~~\  /~~\  /~~\  /~~\ ____Y_[34;147H|__|_[35;98H|/-=|___|=    ||    ||    ||    |_____/~\___/ [153G|_D_[36;99H\_/      \_[36;129H[1P[27d[1P
+[1P[29;99H|(_)---  |   H\_[122G/ |   | [137G=|___ ___|      _
+[1P
+[1P
+[1P[33;98H|/ |   |-[33;117HI_____I [][] []  D   |=[146G|____|_[34;96H__/ =| o |=-~~\  /~~\  /~~\  /~~\ ____Y_[34;146H|__|_[35;97H|/-=|___|=   O=====O=====O=====O|_____/~\___/ [152G|_D__D[36;98H\_/      \__/  \__/  \__/  \__[1P[27d[1P
+[1P[29;98H|(_)---  |   H\_[121G/ |   | [136G=|___ ___|      _
+[1P
+[1P
+[1P[33;97H|/ |   |-[33;116HI_____I [][] []  D   |=[145G|____|_[34;95H__/ =| o |=-~O=====O=====O=====O\ ____Y_[34;145H|__|_[35;96H|/-=|___|=    ||    ||    ||    |_____/~\___/ [151G|_D__D_[36;1H[1P[21;115H(@@) (  ) (@)  ( )  @@    ()    @     O[K[22;110H(   )[K[23;106H(@@@@)[K[24;103H(    )[K[26;101H(@@@)[K
+[1P
+[1P[29;97H|(_)---  |   H\_[120G/ |   | [135G=|___ ___|      _
+[1P
+[1P
+[1P[33;96H|/ |   |-[33;115HI_____I [][] []  D   |=[144G|____|_[34;94H__/ =| o |=-O=====O=====O=====O \ ____Y_[34;144H|__|_[35;95H|/-=|___|=    ||    ||    ||    |_____/~\___/ [150G|_D__D_[36;96H\_/      \__/  \__/  \__/  \__/      \_/ [151G\_/   \[27;1H[1P
+[1P[29;96H|(_)---  |   H\_[119G/ |   | [134G=|___ ___|      _
+[1P
+[1P
+[1P[33;95H|/ |   |-[33;114HI_____I [][] []  D   |=[143G|____|_[34;93H__/ =| o |=-~~\  /~~\  /~~\  /~~\ ____Y_[34;143H|__|_[35;94H|/-=|___|=O=====O=====O=====O   |_____/~\___/ [35;149H|_D__D__D[36;95H\_/      \__/  \__/  \__/  \__/      \_/ [150G\_/   \_[27;1H[1P
+[1P[29;95H|(_)---  |   H\_[118G/ |   | [133G=|___ ___|      _
+[1P
+[1P
+[1P[33;94H|/ |   |-[33;113HI_____I [][] []  D   |=[142G|____|_[34;92H__/ =| o |=-~~\  /~~\  /~~\  /~~\ ____Y_[34;142H|__|_[35;93H|/-=|___|=    ||    ||    ||    |_____/~\___/ [35;148H|_D__D__D_[36;94H\_/      \O=====O=====O=====O_/      \_/ [36;149H\_/   \_/[27;1H[1P
+[1P[29;94H|(_)---  |   H\_[117G/ |   | [132G=|___ ___|      _
+[1P
+[1P
+[1P[33;93H|/ |   |-[33;112HI_____I [][] []  D   |=[141G|____|_[34;91H__/ =| o |=-~~\  /~~\  /~~\  /~~\ ____Y_[34;141H|__|_[35;92H|/-=|___|=    ||    ||    ||    |_____/~\___/ [35;147H|_D__D__D_|[36;93H\_/      \_[36;123H[1P[21;111H(  ) (@@) ( )  (@)  ()    @@    O     @     O[22;106H(@@@)[K[23;102H(    )[K[24;99H(@@@@)[K[26;97H(   )[K
+[1P
+[1P[29;93H|(_)---  |   H\_[116G/ |   | [131G=|___ ___|      _
+[1P
+[1P
+[1P[33;92H|/ |   |-[33;111HI_____I [][] []  D   |=[140G|____|_[34;90H__/ =| o |=-~~\  /~~\  /~~\  /~~\ ____Y_[34;140H|__|_[35;91H|/-=|___|=   O=====O=====O=====O[1P[36;92H\_/      \__/  \__/  \__/  \__[1P[27d[1P
+[1P[29;92H|(_)---  |   H\_[115G/ |   | [130G=|___ ___|      _
+[1P
+[1P
+[1P[33;91H|/ |   |-[33;110HI_____I [][] []  D   |=[139G|____|_[34;89H__/ =| o |=-~O=====O=====O=====O\ ____Y_[34;139H|__|_[35;90H|/-=|___|=    ||    ||    ||    [1P
+[1P[27d[1P
+[1P[29;91H|(_)---  |   H\_[114G/ |   | [129G=|___ ___|      _
+[1P
+[1P
+[1P[33;90H|/ |   |-[33;109HI_____I [][] []  D   |=[138G|____|_[34;88H__/ =| o |=-O=====O=====O=====O \ ____Y_[34;138H|__|_[35;89H|/-=|___|=    ||    ||    ||    |_____/~\___/ [35;144H|_D__D__D_|  |[36;1H[1P[27d[1P
+[1P[29;90H|(_)---  |   H\_[113G/ |   | [128G=|___ ___|      _
+[1P
+[1P
+[1P[33;89H|/ |   |-[33;108HI_____I [][] []  D   |=[137G|____|_[34;87H__/ =| o |=-~~\  /~~\  /~~\  /~~\ ____Y_[34;137H|__|_[35;88H|/-=|___|=O=====O=====O=====O   |_____/~\___/ [35;143H|_D__D__D_|  |_[36;89H\_/      \__/  \__/  \__/  \__/      \_/ [36;144H\_/   \_/    \[21;107H(@@) (  ) (@)  ( )  @@    ()    @     O     @     O[22;102H(   )[K[23;98H(@@@@)[K[24;95H(    )[K[26;93H(@@@)[K
+[1P
+[1P[29;89H|(_)---  |   H\_[112G/ |   | [127G=|___ ___|      _
+[1P
+[1P
+[1P[33;88H|/ |   |-[33;107HI_____I [][] []  D   |=[136G|____|_[34;86H__/ =| o |=-~~\  /~~\  /~~\  /~~\ ____Y_[34;136H|__|_[35;87H|/-=|___|=    ||    ||    ||    |_____/~\___/ [35;142H|_D__D__D_|  |_D[36;88H\_/      \O=====O=====O=====O_/      \_/ [36;143H\_/   \_/    \_[27;1H[1P
+[1P[29;88H|(_)---  |   H\_[111G/ |   | [126G=|___ ___|      _
+[1P
+[1P
+[1P[33;87H|/ |   |-[33;106HI_____I [][] []  D   |=[135G|____|_[34;85H__/ =| o |=-~~\  /~~\  /~~\  /~~\ ____Y_[34;135H|__|_[35;86H|/-=|___|=    ||    ||    ||    |_____/~\___/ [35;141H|_D__D__D_|  |_D_[36;87H\_/      \_[36;117H/      \_/ [36;142H\_/   \_/    \_/[27;1H[1P
+[1P[29;87H|(_)---  |   H\_[110G/ |   | [125G=|___ ___|      _
+[1P
+[1P
+[1P[33;86H|/ |   |-[33;105HI_____I [][] []  D   |=[134G|____|_[34;84H__/ =| o |=-~~\  /~~\  /~~\  /~~\ ____Y_[34;134H|__|_[35;85H|/-=|___|=   O=====O=====O=====O|_____/~\___/ [35;140H|_D__D__D_|  |_D_[36;86H\_/      \__/  \__/  \__/  \__[1P[27d[1P
+[1P
+[1P[30;86H/     |  |   H  |  |     |   | [30;125H||_| |_||     _| [157G\[31;1H[1P
+[1P[33;85H|/ |   |-[33;104HI_____I [][] []  D   |=[133G|____|_[34;83H__/ =| o |=-~O=====O=====O=====O\ ____Y_[34;133H|__|_[35;84H|/-=|___|=    ||    ||    ||    |_____/~\___/ [35;139H|_D__D__D_|  |_D__D[36;1H[1P[21;103H(  ) (@@) ( )  (@)  ()    @@    O     @     O     @[K[22;98H(@@@)[K[23;94H(    )[K[24;91H(@@@@)[K[26;89H(   )[K
+[1P
+[1P
+[1P[30;85H/     |  |   H  |  |     |   | [30;124H||_| |_||     _| [156G\_[31;1H[1P
+[1P[33;84H|/ |   |-[33;103HI_____I [][] []  D   |=[132G|____|_[34;82H__/ =| o |=-O=====O=====O=====O \ ____Y_[34;132H|__|_[35;83H|/-=|___|=    ||    ||    ||    |_____/~\___/ [35;138H|_D__D__D_|  |_D__D_[36;1H[1P[27d[1P
+[1P
+[1P[30;84H/     |  |   H  |  |     |   | [30;123H||_| |_||     _| [155G\_
+[1P
+[1P[33;83H|/ |   |-[33;102HI_____I [][] []  D   |=[131G|____|_[34;81H__/ =| o |=-~~\  /~~\  /~~\  /~~\ ____Y_[34;131H|__|_[35;82H|/-=|___|=O=====O=====O=====O   |_____/~\___/ [35;137H|_D__D__D_|  |_D__D_[36;83H\_/      \__/  \__/  \__/  \__/      \_/ [36;138H\_/   \_/    \_/   \[27;1H[1P
+[1P
+[1P[30;83H/     |  |   H  |  |     |   | [30;122H||_| |_||     _| [154G\_
+[1P
+[1P[33;82H|/ |   |-[33;101HI_____I [][] []  D   |=[130G|____|_[34;80H__/ =| o |=-~~\  /~~\  /~~\  /~~\ ____Y_[34;130H|__|_[35;81H|/-=|___|=    ||    ||    ||    |_____/~\___/ [35;136H|_D__D__D_|  |_D__D__D[36;82H\_/      \O=====O=====O=====O_/      \_/ [36;137H\_/   \_/    \_/   \_[27;1H[1P
+[1P
+[1P[30;82H/     |  |   H  |  |     |   | [30;121H||_| |_||     _| [153G\_
+[1P
+[1P[33;81H|/ |   |-[33;100HI_____I [][] []  D   |=[129G|____|_[34;79H__/ =| o |=-~~\  /~~\  /~~\  /~~\ ____Y_[34;129H|__|_[35;80H|/-=|___|=    ||    ||    ||    |_____/~\___/ [35;135H|_D__D__D_|  |_D__D__D_[36;81H\_/      \_[36;111H/      \_/ [36;136H\_/   \_/    \_/   \_/[21;99H(@@) (  ) (@)  ( )  @@    ()    @     O     @     O      @[22;94H(   )[K[23;90H(@@@@)[K[24;87H(    )[K[26;85H(@@@)[K
+[1P
+[1P
+[1P[30;81H/     |  |   H  |  |     |   | [30;120H||_| |_||     _| [152G\_
+[1P
+[1P[33;80H|/ |   |-[33;99HI_____I [][] []  D   |=[128G|____|_[34;78H__/ =| o |=-~~\  /~~\  /~~\  /~~\ ____Y_[34;128H|__|_[35;79H|/-=|___|=   O=====O=====O=====O|_____/~\___/ [35;134H|_D__D__D_|  |_D__D__D_|[36;80H\_/      \__/  \__/  \__/  \__[1P[27d[1P
+[1P
+[1P[30;80H/     |  |   H  |  |     |   | [30;119H||_| |_||     _| [151G\_____A[31;79H|      |  |   H  |__-[31;119H| [___] |   =| [157G|[32;79H| _[89G|___H__/__|_____/[][]~\_[119G| [127G|   -| [157G|[33;79H|/ |   |-[33;98HI_____I [][] []  D   |=[127G|____|_[157G|[34;77H__/ =| o |=-~O=====O=====O=====O\ ____Y_[34;127H|__|_[157G|[35;78H|/-=|___|=    ||    ||    ||    [1P
+[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P[33;78H|/ |   |-[33;97HI_____I [][] []  D   |=[126G|____|_[156G|_[34;76H__/ =| o |=-O=====O=====O=====O \ ____Y_[34;126H|__|_[156G|_[35;1H[1P
+[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[34;75H__/ =| o |=-~~\  /~~\  /~~\  /~~[1P[35;76H|/-=|___|=O=====O=====O=====O[1P
+[1P[21;95H(  ) (@@) ( )  (@)  ()    @@    O     @     O     @      O[K[22;90H(@@@)[K[23;86H(    )[K[24;83H(@@@@)[K[26;81H(   )[K
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[35;75H|/-=|___|=    ||    ||    || [1P[36;76H\_/      \O=====O=====O=====O[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[36;75H\_/      \_[36;105H[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[35;73H|/-=|___|=   O=====O=====O=====O[1P[36;74H\_/      \__/  \__/  \__/  \__[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[34;71H__/ =| o |=-~O=====O=====O=====O[1P[35;72H|/-=|___|=    ||    ||    ||    [1P
+[1P[21;91H(@@) (  ) (@)  ( )  @@    ()    @     O     @     O      @[K[22;86H(   )[K[23;82H(@@@@)[K[24;79H(    )[K[26;77H(@@@)[K
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[34;70H__/ =| o |=-O=====O=====O=====O [1P
+[1P
+[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[34;69H__/ =| o |=-~~\  /~~\  /~~\  /~~[1P[35;70H|/-=|___|=O=====O=====O=====O[1P
+[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[35;69H|/-=|___|=    ||    ||    || [1P[36;70H\_/      \O=====O=====O=====O[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[36;69H\_/      \_[36;99H[1P[21;87H(  ) (@@) ( )  (@)  ()    @@    O     @     O     @      O[K[22;82H(@@@)[K[23;78H(    )[K[24;75H(@@@@)[K[26;73H(   )[K
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[35;67H|/-=|___|=   O=====O=====O=====O[1P[36;68H\_/      \__/  \__/  \__/  \__[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[34;65H__/ =| o |=-~O=====O=====O=====O[1P[35;66H|/-=|___|=    ||    ||    ||    [1P
+[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[34;64H__/ =| o |=-O=====O=====O=====O [1P
+[1P
+[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[34;63H__/ =| o |=-~~\  /~~\  /~~\  /~~[1P[35;64H|/-=|___|=O=====O=====O=====O[1P
+[1P[21;83H(@@) (  ) (@)  ( )  @@    ()    @     O     @     O      @[K[22;78H(   )[K[23;74H(@@@@)[K[24;71H(    )[K[26;69H(@@@)[K
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[35;63H|/-=|___|=    ||    ||    || [1P[36;64H\_/      \O=====O=====O=====O[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[36;63H\_/      \_[36;93H[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[35;61H|/-=|___|=   O=====O=====O=====O[1P[36;62H\_/      \__/  \__/  \__/  \__[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[34;59H__/ =| o |=-~O=====O=====O=====O[1P[35;60H|/-=|___|=    ||    ||    ||    [1P
+[1P[21;79H(  ) (@@) ( )  (@)  ()    @@    O     @     O     @      O[K[22;74H(@@@)[K[23;70H(    )[K[24;67H(@@@@)[K[26;65H(   )[K
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[34;58H__/ =| o |=-O=====O=====O=====O [1P
+[1P
+[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[34;57H__/ =| o |=-~~\  /~~\  /~~\  /~~[1P[35;58H|/-=|___|=O=====O=====O=====O[1P
+[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[35;57H|/-=|___|=    ||    ||    || [1P[36;58H\_/      \O=====O=====O=====O[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[36;57H\_/      \_[36;87H[1P[21;75H(@@) (  ) (@)  ( )  @@    ()    @     O     @     O      @[K[22;70H(   )[K[23;66H(@@@@)[K[24;63H(    )[K[26;61H(@@@)[K
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[35;55H|/-=|___|=   O=====O=====O=====O[1P[36;56H\_/      \__/  \__/  \__/  \__[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[34;53H__/ =| o |=-~O=====O=====O=====O[1P[35;54H|/-=|___|=    ||    ||    ||    [1P
+[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[34;52H__/ =| o |=-O=====O=====O=====O [1P
+[1P
+[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[34;51H__/ =| o |=-~~\  /~~\  /~~\  /~~[1P[35;52H|/-=|___|=O=====O=====O=====O[1P
+[1P[21;71H(  ) (@@) ( )  (@)  ()    @@    O     @     O     @      O[K[22;66H(@@@)[K[23;62H(    )[K[24;59H(@@@@)[K[26;57H(   )[K
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[35;51H|/-=|___|=    ||    ||    || [1P[36;52H\_/      \O=====O=====O=====O[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[36;51H\_/      \_[36;81H[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[35;49H|/-=|___|=   O=====O=====O=====O[1P[36;50H\_/      \__/  \__/  \__/  \__[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[34;47H__/ =| o |=-~O=====O=====O=====O[1P[35;48H|/-=|___|=    ||    ||    ||    [1P
+[1P[21;67H(@@) (  ) (@)  ( )  @@    ()    @     O     @     O      @[K[22;62H(   )[K[23;58H(@@@@)[K[24;55H(    )[K[26;53H(@@@)[K
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[34;46H__/ =| o |=-O=====O=====O=====O [1P
+[1P
+[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[34;45H__/ =| o |=-~~\  /~~\  /~~\  /~~[1P[35;46H|/-=|___|=O=====O=====O=====O[1P
+[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[35;45H|/-=|___|=    ||    ||    || [1P[36;46H\_/      \O=====O=====O=====O[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[36;45H\_/      \_[36;75H[1P[21;63H(  ) (@@) ( )  (@)  ()    @@    O     @     O     @      O[K[22;58H(@@@)[K[23;54H(    )[K[24;51H(@@@@)[K[26;49H(   )[K
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[35;43H|/-=|___|=   O=====O=====O=====O[1P[36;44H\_/      \__/  \__/  \__/  \__[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[34;41H__/ =| o |=-~O=====O=====O=====O[1P[35;42H|/-=|___|=    ||    ||    ||    [1P
+[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[34;40H__/ =| o |=-O=====O=====O=====O [1P
+[1P
+[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[34;39H__/ =| o |=-~~\  /~~\  /~~\  /~~[1P[35;40H|/-=|___|=O=====O=====O=====O[1P
+[1P[21;59H(@@) (  ) (@)  ( )  @@    ()    @     O     @     O      @[K[22;54H(   )[K[23;50H(@@@@)[K[24;47H(    )[K[26;45H(@@@)[K
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[35;39H|/-=|___|=    ||    ||    || [1P[36;40H\_/      \O=====O=====O=====O[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[36;39H\_/      \_[36;69H[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[35;37H|/-=|___|=   O=====O=====O=====O[1P[36;38H\_/      \__/  \__/  \__/  \__[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[34;35H__/ =| o |=-~O=====O=====O=====O[1P[35;36H|/-=|___|=    ||    ||    ||    [1P
+[1P[21;55H(  ) (@@) ( )  (@)  ()    @@    O     @     O     @      O[K[22;50H(@@@)[K[23;46H(    )[K[24;43H(@@@@)[K[26;41H(   )[K
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[34;34H__/ =| o |=-O=====O=====O=====O [1P
+[1P
+[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[34;33H__/ =| o |=-~~\  /~~\  /~~\  /~~[1P[35;34H|/-=|___|=O=====O=====O=====O[1P
+[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[35;33H|/-=|___|=    ||    ||    || [1P[36;34H\_/      \O=====O=====O=====O[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[36;33H\_/      \_[36;63H[1P[21;51H(@@) (  ) (@)  ( )  @@    ()    @     O     @     O      @[K[22;46H(   )[K[23;42H(@@@@)[K[24;39H(    )[K[26;37H(@@@)[K
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[35;31H|/-=|___|=   O=====O=====O=====O[1P[36;32H\_/      \__/  \__/  \__/  \__[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[34;29H__/ =| o |=-~O=====O=====O=====O[1P[35;30H|/-=|___|=    ||    ||    ||    [1P
+[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[34;28H__/ =| o |=-O=====O=====O=====O [1P
+[1P
+[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[34;27H__/ =| o |=-~~\  /~~\  /~~\  /~~[1P[35;28H|/-=|___|=O=====O=====O=====O[1P
+[1P[21;47H(  ) (@@) ( )  (@)  ()    @@    O     @     O     @      O[K[22;42H(@@@)[K[23;38H(    )[K[24;35H(@@@@)[K[26;33H(   )[K
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[35;27H|/-=|___|=    ||    ||    || [1P[36;28H\_/      \O=====O=====O=====O[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[36;27H\_/      \_[36;57H[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[35;25H|/-=|___|=   O=====O=====O=====O[1P[36;26H\_/      \__/  \__/  \__/  \__[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[34;23H__/ =| o |=-~O=====O=====O=====O[1P[35;24H|/-=|___|=    ||    ||    ||    [1P
+[1P[21;43H(@@) (  ) (@)  ( )  @@    ()    @     O     @     O      @[K[22;38H(   )[K[23;34H(@@@@)[K[24;31H(    )[K[26;29H(@@@)[K
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[34;22H__/ =| o |=-O=====O=====O=====O [1P
+[1P
+[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[34;21H__/ =| o |=-~~\  /~~\  /~~\  /~~[1P[35;22H|/-=|___|=O=====O=====O=====O[1P
+[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[35;21H|/-=|___|=    ||    ||    || [1P[36;22H\_/      \O=====O=====O=====O[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[36;21H\_/      \_[36;51H[1P[21;39H(  ) (@@) ( )  (@)  ()    @@    O     @     O     @      O[K[22;34H(@@@)[K[23;30H(    )[K[24;27H(@@@@)[K[26;25H(   )[K
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[35;19H|/-=|___|=   O=====O=====O=====O[1P[36;20H\_/      \__/  \__/  \__/  \__[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[34;17H__/ =| o |=-~O=====O=====O=====O[1P[35;18H|/-=|___|=    ||    ||    ||    [1P
+[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[34;16H__/ =| o |=-O=====O=====O=====O [1P
+[1P
+[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[34;15H__/ =| o |=-~~\  /~~\  /~~\  /~~[1P[35;16H|/-=|___|=O=====O=====O=====O[1P
+[1P[21;35H(@@) (  ) (@)  ( )  @@    ()    @     O     @     O      @[K[22;30H(   )[K[23;26H(@@@@)[K[24;23H(    )[K[26;21H(@@@)[K
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[35;15H|/-=|___|=    ||    ||    || [1P[36;16H\_/      \O=====O=====O=====O[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[36;15H\_/      \_[36;45H[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[35;13H|/-=|___|=   O=====O=====O=====O[1P[36;14H\_/      \__/  \__/  \__/  \__[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[34;11H__/ =| o |=-~O=====O=====O=====O[1P[35;12H|/-=|___|=    ||    ||    ||    [1P
+[1P[21;31H(  ) (@@) ( )  (@)  ()    @@    O     @     O     @      O[K[22;26H(@@@)[K[23;22H(    )[K[24;19H(@@@@)[K[26;17H(   )[K
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[34;10H__/ =| o |=-O=====O=====O=====O [1P
+[1P
+[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[34;9H__/ =| o |=-~~\  /~~\  /~~\  /~~[1P[35;10H|/-=|___|=O=====O=====O=====O[1P
+[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[35;9H|/-=|___|=    ||    ||    || [1P[36;10H\_/      \O=====O=====O=====O[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[36;9H\_/      \_[36;39H[1P[21;27H(@@) (  ) (@)  ( )  @@    ()    @     O     @     O      @[K[22;22H(   )[K[23;18H(@@@@)[K[24;15H(    )[K[26;13H(@@@)[K
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[7G|/-=|___|=   O=====O=====O=====O[1P
+[8G\_/      \__/  \__/  \__/  \__[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+    __/ =| o |=-~O=====O=====O=====O[1P
+[6G|/-=|___|=    ||    ||    ||    [1P
+[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+   __/ =| o |=-O=====O=====O=====O [1P
+[1P
+[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+  __/ =| o |=-~~\  /~~\  /~~\  /~~[1P
+   |/-=|___|=O=====O=====O=====O[1P
+[1P[21;23H(  ) (@@) ( )  (@)  ()    @@    O     @     O     @      O[K[22;18H(@@@)[K[23;14H(    )[K[24;11H(@@@@)[K[26;9H(   )[K
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+  |/-=|___|=    ||    ||    || [1P
+   \_/      \O=====O=====O=====O[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+  \_/      \_[36;33H[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+|/-=|___|=   O=====O=====O=====O[1P
+ \_/      \__/  \__/  \__/  \__[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+/ =| o |=-~O=====O=====O=====O[1P
+/-=|___|=    ||    ||    ||    [1P
+[1P[21;19H(@@) (  ) (@)  ( )  @@    ()    @     O     @     O      @[K[22;14H(   )[K[23;10H(@@@@)[K
+[7G(    )[K
+
+[5G(@@@)[K
+[1P
+[1P
+[1P
+[1P
+[6G[1K[1P
+[1P
+[1P
+ =| o |=-O=====O=====O=====O [1P
+[1P
+[1P[27d[1P
+[1P
+[1P
+    [1K[1P
+[1P
+[1P
+[1P
+=| o |=-~~\  /~~\  /~~\  /~~[1P
+=|___|=O=====O=====O=====O[1P
+[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+|___|=    ||    ||    || [1P
+[6G[1K \O=====O=====O=====O[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[6G\_[36;27H[1P[21;15H(  ) (@@) ( )  (@)  ()    @@    O     @     O     @      O[K[22;10H(@@@)[K
+[6G(    )[K
+  (@@@@)[K
+
+(   )[K
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+__|=   O=====O=====O=====O[1P
+[5G\__/  \__/  \__/  \__[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+ |=-~O=====O=====O=====O[1P
+_|=    ||    ||    ||    [1P
+[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+|=-O=====O=====O=====O [1P
+[1P
+[1P[27;8H[1K[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+=-~~\  /~~\  /~~\  /~~[1P
+=O=====O=====O=====O[1P
+[1P[21;11H(@@) (  ) (@)  ( )  @@    ()    @     O     @     O      @[K
+[6G(   )[K
+ (@@@@)[K
+   )[K
+
+)[K
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+    ||    ||    || [1P
+\O=====O=====O=====O[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+_[36;21H[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+ O=====O=====O=====O[1P
+_/  \__/  \__/  \__[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+=====O=====O=====O[1P
+ ||    ||    ||    [1P
+[1P[21;7H(  ) (@@) ( )  (@)  ()    @@    O     @     O     @      O[K
+ (@@@)[K
+  )[K
+[K
+
+[K
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+===O=====O=====O [1P
+[1P
+[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+ /~~\  /~~\  /~~[1P
+=O=====O=====O[1P
+[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+    ||    || [1P
+=O=====O=====O[1P[27d[1P
+[8G[1K[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[36;15H[1P[21;3H(@@) (  ) (@)  ( )  @@    ()    @     O     @     O      @[K
+ )[K
+[K
+
+
+
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+=O=====O=====O[1P
+_/  \__/  \__[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+=====O=====O[1P
+ ||    ||    [1P
+[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+===O=====O [1P
+[1P
+[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+ /~~\  /~~[1P
+=O=====O[1P
+[1P[21d ) (@@) ( )  (@)  ()    @@    O     @     O     @      O[K
+[K[27d[1P
+[1P
+[1P
+    [1K[1P
+[1P
+[1P
+[1P
+[1P
+    || [1P
+=O=====O[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[36;9H[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+=O=====O[1P
+_/  \__[1P[27;16H[1K[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+=====O[1P
+ ||    [1P
+[1P[21d  ) (@)  ( )  @@    ()    @     O     @     O      @[K[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+===O [1P
+[1P
+[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+ /~~[1P
+=O[1P
+[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+ [1P
+=O[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+=O[1P[21d( )  (@)  ()    @@    O     @     O     @      O[K[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+=O[1P
+_[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+ [1P
+[1P[27d[1P
+[1P
+[8G[1K[1P[30;9H[1K[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[6G[1K[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[21d ( )  @@    ()    @     O     @     O      @[K[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[21d  ()    @@    O     @     O     @      O[K[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[27d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[36;15H[1K[1P[21d    ()    @     O     @     O      @[K[27;11H 
+[1P
+[1P
+[1P
+[1P
+[7G[1K[1P
+[1P
+[1P
+[1P
+[1P[27;10H 
+|[K
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[27;9H 
+|[K
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[27;8H 
+|[K
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[35;10H[1K[1P
+[1P[21d@@    O     @     O     @      O[K[27;7H 
+|[K
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[27;6H 
+|[K
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[27;5H 
+|[K
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[27;4H 
+|[K
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[21d  @     O     @     O      @[K[27;3H 
+|[K
+   [1K[1P
+    [1K[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[27d_ 
+|[K
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[27d[K
+[K
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[29d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[21d    @     O     @      O[K[29d[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P
+[1P[29d[1P
+[1P[31;24H[1K |[K
+[1K |[K
+[1P
+[1P
+[1P
+[1P[29d[1P
+[1P[31;24H|[K
+|[K
+[1P
+[1P
+[1P
+[1P[29;17H 
+[1K[1P[31;23H|[K
+|[K
+[1P
+[1P
+[1P
+[1P[21dO     @     O      @[K[29;16H 
+[1P[31;22H|[K
+|[K
+[1P
+[1P
+[1P
+[1P[29;15H 
+[1P[31;21H|[K
+|[K
+[1P
+[1P
+[1P
+[1P[29;14H 
+[1P[31;20H|[K
+|[K
+[1P
+[1P
+[1P
+[1P[29;13H 
+[1P[31;19H|[K
+|[K
+[1P
+[1P
+[1P
+[1P[21d  O     @      O[K[29;12H 
+[1P[31;18H|[K
+|[K
+[1P
+[1P
+[1P
+[1P[29;11H 
+[1P[31;17H|[K
+|[K
+[1P
+[1P
+[1P
+[1P[29;10H 
+[1P[31;16H|[K
+|[K
+[1P
+[1P
+[1P
+[1P[29;9H 
+[1P[31;15H|[K
+|[K
+[1P
+[1P
+[1P
+[1P[21d    O      @[K[29;8H 
+[1P[31;14H|[K
+|[K
+[1P
+[1P
+[1P
+[1P[29;7H 
+[1P[31;13H|[K
+|[K
+[1P
+[1P
+[1P
+[1P[29;6H 
+[1P[31;12H|[K
+|[K
+[1P
+[1P
+[1P
+[1P[29;5H 
+[1P[31;11H|[K
+|[K
+[1P
+[1P
+[1P
+[1P[21d@      O[K[29;4H 
+[1P[31;10H|[K
+|[K
+[1P
+[1P
+[1P
+[1P[29d__ 
+[1P[31;9H|[K
+|[K
+[1P
+[1P
+[1P
+[1P[29d_ 
+[1P
+[8G|[K
+|[K
+[1P
+[1P
+[1P
+[1P[29d[K
+[1P
+[7G|[K
+|[K
+[1P
+[1P
+[1P
+  \_/[K[21d   @[K[30d[1P
+[6G|[K
+|[K
+[1P
+[1P
+__D_|[K
+ \_/[K[30dA[K
+|[K
+|[K
+[1P
+[1P
+_D_|[K
+\_/[K[30dA[K
+|[K
+|[K
+___|_[K
+___|_[K
+D_|[K
+_/[K[30dA[K
+|[K
+|[K
+__|_[K
+__|_[K
+_|[K
+/[K[J[21d[K[30d_A[K
+|[K
+|[K
+_|_[K
+_|_[K
+|[K[J[30dA[K
+|[K
+|[K
+|_[K
+|_[K[30d[K
+[K
+[K
+_[K
+_[K[A[J[63;1H[?12l[?25h[?1049l[23;0;0t[?1l>[63d]0;griffinw@VAIO:~/Documents/Programming/Bash-Scripting/Tutorials/tutoriaLinux[01;32m[griffinw@VAIO[01;37m tutoriaLinux[01;32m]$[00m cd /
+]0;griffinw@VAIO:/[01;32m[griffinw@VAIO[01;37m /[01;32m]$[00m ls
+[0m[01;36mbin[0m  [01;34mboot[0m  [00;32mdesktopfs-pkgs.txt[0m  [01;34mdev[0m  [01;34metc[0m  [01;34mhome[0m  [01;36mlib[0m  [01;36mlib64[0m  [01;34mlost+found[0m  [01;34mmnt[0m  [01;34mopt[0m  [01;34mproc[0m  [01;34mroot[0m  [00;32mrootfs-pkgs.txt[0m  [01;34mrun[0m  [01;36msbin[0m  [01;34msrv[0m  [01;34msys[0m  [30;42mtmp[0m  [01;34musr[0m  [01;34mvar[0m
+]0;griffinw@VAIO:/[01;32m[griffinw@VAIO[01;37m /[01;32m]$[00m cd -
+/home/griffinw/Documents/Programming/Bash-Scripting/Tutorials/tutoriaLinux
+]0;griffinw@VAIO:~/Documents/Programming/Bash-Scripting/Tutorials/tutoriaLinux[01;32m[griffinw@VAIO[01;37m tutoriaLinux[01;32m]$[00m ls
+[0m[01;32marguments[0m  [01;32mcomparisons[0m  [01;32mfunctions[0m  [01;32mhelloWorld[0m  [01;32mif[0m  [00;32mip.log[0m  [00;32mreadme.txt[0m  [00;32mreplay.log[0m  [00;32mtime.log[0m
+]0;griffinw@VAIO:~/Documents/Programming/Bash-Scripting/Tutorials/tutoriaLinux[01;32m[griffinw@VAIO[01;37m tutoriaLinux[01;32m]$[00m clear
+[3J[H[2J]0;griffinw@VAIO:~/Documents/Programming/Bash-Scripting/Tutorials/tutoriaLinux[01;32m[griffinw@VAIO[01;37m tutoriaLinux[01;32m]$[00m screenfetch
+[0m
+[0m[1;32m ██████████████████  ████████    [0m[1;32m griffinw[0m[1m@[0m[0m[1;32mVAIO[0m
+[0m[1;32m ██████████████████  ████████    [0m[1;32m OS:[0m Manjaro 18.0.4 Illyria[0m
+[0m[1;32m ██████████████████  ████████    [0m[1;32m Kernel:[0m x86_64 Linux 4.19.62-1-MANJARO[0m
+[0m[1;32m ██████████████████  ████████    [0m[1;32m Uptime:[0m 37m[0m
+[0m[1;32m ████████            ████████    [0m[1;32m Packages:[0m 1612[0m
+[0m[1;32m ████████  ████████  ████████    [0m[1;32m Shell:[0m bash 5.0.7[0m
+[0m[1;32m ████████  ████████  ████████    [0m[1;32m CPU:[0m Intel Core i5-2410M @ 4x 2.9GHz [44.0°C][0m
+[0m[1;32m ████████  ████████  ████████    [0m[1;32m GPU:[0m Unknown[0m
+[0m[1;32m ████████  ████████  ████████    [0m[1;32m RAM:[0m 1765MiB / 7891MiB[0m
+[0m[1;32m ████████  ████████  ████████    [0m
+[0m[1;32m ████████  ████████  ████████    [0m
+[0m[1;32m ████████  ████████  ████████    [0m
+[0m[1;32m ████████  ████████  ████████    [0m
+[0m[1;32m ████████  ████████  ████████    [0m
+                                 [0m
+]0;griffinw@VAIO:~/Documents/Programming/Bash-Scripting/Tutorials/tutoriaLinux[01;32m[griffinw@VAIO[01;37m tutoriaLinux[01;32m]$[00m clear
+[3J[H[2J]0;griffinw@VAIO:~/Documents/Programming/Bash-Scripting/Tutorials/tutoriaLinux[01;32m[griffinw@VAIO[01;37m tutoriaLinux[01;32m]$[00m echo "Finished with the replay.'
+> 
+> ^C
+]0;griffinw@VAIO:~/Documents/Programming/Bash-Scripting/Tutorials/tutoriaLinux[01;32m[griffinw@VAIO[01;37m tutoriaLinux[01;32m]$[00m exit
+
+Script done on 2019-08-02 08:56:16-05:00 [COMMAND_EXIT_CODE="130"]
