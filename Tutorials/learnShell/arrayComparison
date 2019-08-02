@@ -1,0 +1,15 @@
+#! /bin/bash
+
+#There is no limit to how many elements can be in an array, and the elements do not have to be contiguously assigned.
+
+anArray=(12 23 34 45 56 67)
+
+#You can refer to elements in an array in various ways. For example:
+#To refer to a specific element, ${anArray[1]}
+echo "The second element in the array is: ${anArray[1]}"
+
+#To refer to every value in the array, ${anArray[@]}
+echo "All of the elements in the array: ${anArray[@]}"
+
+#To find the number of elements in the array, ${#anArray[@]}
+echo "The number of elements in the array ${#anArray[@]}"

@@ -1,0 +1,32 @@
+#! /bin/bash
+
+#In this exercise, you will need to compare three list of arrays and write the common elements of all the three arrays:
+#a=(3 5 8 10 6),b=(6 5 4 12),c=(14 7 5 7) result is the common element 5.
+
+# enter your array comparison code here
+
+#Creating three arrays which all contain an instance of the number 5.
+a=(3 5 8 10 6)
+b=(6 5 4 12)
+c=(14 7 5 7)
+
+#An array comparison which will find common values between the arrays.
+#It will loop through each value in $a, see if it exists in $b, and then, if it does, see if it also exists in $c.
+
+#Going through each value in $a.
+for i in "${a[@]}"; do
+	#Going through each value in $b.
+	for j in "${b[@]}"; do
+		#Checking to see if the curerent set of values match.
+		if [[ i -eq j ]];then
+			#If they do, running through $c to check for it in there as well.
+		    	for k in "${c[@]}"; do
+				#If the value is found in $c.
+        			if [[ $i = $j ]] && [[ $i = $k ]];then
+					#Printing out what the common number is.
+			            	echo $i
+				fi
+        		done
+		fi
+	done
+done
