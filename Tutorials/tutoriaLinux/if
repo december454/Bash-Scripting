@@ -13,14 +13,14 @@ headShake="**Shakes Head**"
 #If your name is Dave
 if [ "$name" = "Dave" ]; then
 	#greet
-	echo $greeting
+	echo "$greeting"
 
 #If your name is Steve
 elif [ "$name" = "Steve" ]; then
 	#Tip hat
-	echo $hatTip
+	echo "$hatTip"
 #Else
 else
 	#Shake head
-	echo $headShake
+	echo "$headShake"
 fi

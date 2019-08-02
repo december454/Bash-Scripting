@@ -7,7 +7,7 @@
 
 #Finding the filename.
 theFileName=$0
-echo $theFileName
+echo "$theFileName"
 
 #Finding how many arguments the script was called with.
 numArgs=$#
@@ -16,3 +16,5 @@ numArgs=$#
 echo "The first three args were ${1}, ${2}, and ${3}."
 
 echo "${5}     <--- trying to print an empty arg ($ 5)."
+
+echo "there were $numArgs arguments."

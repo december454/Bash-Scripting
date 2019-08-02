@@ -51,7 +51,7 @@ fi
 int1=1
 int2=7
 
-#equal and not equal
+#Equal and not equal
 if [ $int1 -eq $int2 ]; then
 	echo "${int1} is equal to ${int2}."
 fi
@@ -69,7 +69,7 @@ if [ $int1 -lt $int2 ]; then
 fi
 
 #String comparison operators can be used with double parantheses.
-if (( $int1 == b$int2 )); then
+if (( int1 == int2 )); then
 	echo "${int1} is equal to ${int2}"
 fi
 

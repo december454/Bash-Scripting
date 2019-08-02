@@ -52,12 +52,12 @@ function guessNum() {
 	#Testing the conditionals.
 	if [[ $number -eq 99 ]]; then
 		spaced "You guessed the number!"
-	elif (( $number < 10 )); then
+	elif (( number < 10 )); then
 		spaced "You guessed wrong!"
 
 		#Set a variable interactively.
 		echo "Hi ${name}, to avoid losing, please enter the password:"
-		read password
+		read -r password
 
 		if [[ "$password" == "password" ]]; then
 			spaced "You entered the correct password."
@@ -67,5 +67,5 @@ function guessNum() {
 	fi
 }
 
-guessNum $number
+guessNum "$number"
 exit 0
