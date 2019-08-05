@@ -1,0 +1,76 @@
+#! /bin/bash
+
+#Just as any traditional progamming language, the shell also supports logical decision making.
+#A condition can be constructed using this basic format:
+
+#if [ expression ]; then
+#	code
+#fi
+
+name=John
+if [ "$name" = "John" ]; then
+	echo "My name is John."
+fi
+
+#This can be expanded with 'else'
+name=bill
+if [ "$name" = "John" ]; then
+	echo "My name is John"
+else
+	echo "I am not John; I am $name."
+fi
+
+#This can be expanded further with an else if 'elif'
+name=George
+if [ "$name" = "John" ]; then
+	echo "John Lennon"
+elif [ "$name" = "George" ]; then
+	echo "George Harrison"
+else
+	echo "This leaves us with Paul and Ringo"
+fi
+
+#An expression is evaluated to either true or false. The expression can be a stingle string or variable.
+#A string that is undefined, empty, or only spaces will evaluate as false.
+#The expression can be a logical combination of comparisons: ! NEGATION, && AND, || OR.
+#Conditional statements should be surrounded by double brackets [[.....]]
+
+#Numeric Comparisons:
+# $a -lt $b    $a < $b
+# $a -gt $b    $a > $b
+# $a -le $b    $a <= $b
+# $a -ge $b    $a >= $b
+# $a -eq $b    $a is equal to $b
+# $a -ne $b    $a is not equal to $b
+
+#String Comparisons:
+# "$a" = "$b"     $a is the same as $b
+# "$a" == "$b"    $a is the same as $b
+# "$a" != "$b"    $a is different from $b
+# -z "$a"         $a is empty
+#Whitespace is needed around '=' and its derivitives.
+#Use double quotes "" around string variables to avoid the expansion of special characters.
+
+#Logical Combinations:
+#if <a href='/en/_%24VAR_A_-eq_1_%26%26_%28%24VAR_B_%3D_%22bee%22_'>| $VAR_T = "tee") </a> ; then
+#    command...
+#fi
+
+#Case Structure:
+#Cases can also be implemented in bash using the following structure.
+#case "$var" in
+#	"condition1" )
+#		command
+#	;;
+#	"condition2" )
+#		command
+#	;;
+#esac
+
+caseVar=1
+case $caseVar in
+	1) echo "The variable has a value of one.";;
+	2) echo "The variable has a value of two.";;
+	"test") echo "The varaible has a value of test.";;
+esac
+

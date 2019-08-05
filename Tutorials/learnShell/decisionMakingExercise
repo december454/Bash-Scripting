@@ -1,0 +1,25 @@
+#! /bin/bash
+
+#Instructions:
+#Change the variables in the first section, so that each if statement resolves as True.
+
+# change these variables
+#Making the numbers greater than 15 (1st if), equal to one another (2nd if), and small enough to have their sun less than or equal to 32 (4th if).
+NUMBER=16
+APPLES=16
+#The numbers can not be as small as 12 so "KING" has to be "LUIS" in order for the 3rd if to be true.
+KING=LUIS
+# modify above variables
+# to make all decisions below TRUE
+if [ $NUMBER -gt 15 ] ; then
+  echo 1
+fi
+if [ $NUMBER -eq $APPLES ] ; then
+  echo 2
+fi
+if [[ ($APPLES -eq 12) || ("$KING" = "LUIS") ]] ; then
+  echo 3
+fi
+if [[ $(($NUMBER + $APPLES)) -le 32 ]] ; then
+  echo 4
+fi
