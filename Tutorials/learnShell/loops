@@ -1,0 +1,84 @@
+#! /bin/bash
+
+#For Each Loop:
+#A simple for each loop can be written in bash using the following structure:
+#for var in [list]
+#do
+#	command
+#done
+#For each cycle of the loop, var will take on the value of one of the items in list.
+
+#Loop through items in an array.
+echo "FOR EACH:"
+names=('C30 Polestar' 'V70R' '850 T-5R' '740 GLT')
+for name in "${names[@]}"; do
+	echo "My name is $name"
+done
+echo
+
+#Loop on command output results.
+echo "FOR EACH COMMAND OUTPUT:"
+for f in $( ls loops /etc/localtime ); do
+	echo "File is: $f"
+done
+echo
+
+#While loop:
+#The while loop will test for a condition and continue to cycle as long as it is true. A simple while loop in bash follows this structure:
+#while [ condition ]
+#do
+#	command
+#done
+
+echo "WHILE LOOP:"
+count=4
+while [ $count -gt 0 ]; do
+	echo "The value of count is: $count"
+	count=$(($count - 1))
+done
+echo
+
+#Until loop:
+#The until loop follows a similar but reversed structure compared to a while loop. It will cycle until a condition is true and then stop.
+#unti [ condition ]
+#do
+#	command
+#done
+
+echo "UNTIL LOOP:"
+count=1
+until [ $count -gt 5 ]; do
+	echo "The value of count is: $count"
+	count=$(($count + 1))
+done
+echo
+
+#Break and continue statements:
+#You can use break and continue statements to control loop execution in for, while, and until loops.
+#Continue will skip over the rest of the commands in the loop and move on to the next iteration.
+#Break will stop execution completely exit the loop.
+
+echo "BREAK:"
+#Prints out 0,1,2,3,4
+count=0
+while [ $count -ge 0 ]; do
+	echo "The value of count is: $count"
+	count=$(($count + 1))
+	if [ $count -ge 5 ]; then
+		break
+	fi
+done
+echo
+
+#Prints out only odd numbers 1,3,5,7,9
+echo "CONTINUE:"
+count=0
+while [ $count -lt 10 ]; do
+	count=$(($count + 1))
+	#if $count is even.
+	if [ $(($count % 2)) = 0 ]; then
+		#Skipping over the rest of the code.
+		continue
+	fi
+	echo "The value of count is: $count"
+done
