@@ -1,0 +1,30 @@
+#! /bin/bash
+
+#Simple arithmetics on variables can be performed using the arithmetic expression. $((.......))
+#The basic operators are: +  -   *  /  %  **
+#For example:
+A=5
+B=2
+
+var1=$((A + B))
+var2=$((A - B))
+var3=$((A * B))
+var4=$((A / B))
+var5=$((A % B))
+var6=$((A ** B))
+
+echo "A = $A	B = $B"
+echo
+echo '$((A + B))  equals:' "$var1"
+echo '$((A - B))  equals:' "$var2"
+echo '$((A * B))  equals:' "$var3"
+echo '$((A / B))  equals:' "$var4"
+echo '$((A % B))  equals:' "$var5"
+echo '$((A ** B)) equals:' "$var6"
+echo
+
+A=3
+B=$((100 * $A + 5))
+
+echo "A = $A	B =" '$((100 * $A + 5))'
+echo "B equals: $B"
