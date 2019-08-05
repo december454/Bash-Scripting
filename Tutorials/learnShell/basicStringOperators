@@ -1,0 +1,75 @@
+#! /bin/bash
+
+#The shell provides several common string operators to work with. Such as:
+
+#Script Length:
+#Get the length of a string using ${#.....}
+echo "STRING LENGTH"
+string0="This is a test string"
+echo "string0 = $string0"
+echo "The length of string0 is: ${#string0}"
+echo
+
+#Index of a character:
+#Find the numerical position in $string1 of any single character in $substring that matches. The expr command is used for this.
+#expr index "$string1" "$substring"
+echo "INDEX OF A CHARACTER"
+string1="The character z is in this string"
+substring="z"
+index=$(expr index "$string1" "$substring")
+echo "string1 = $string1"
+echo "$substring is located at index $index"
+echo
+
+#Substring extraction:
+#Extract a substring of a specified length starting at a specified index. The string, position, length are separated by colons. ${string:$pos:$length}
+#If no length is included, it will extract a substring from $pos to the end of line.
+echo "SUBSTRING EXTRACTION"
+string2="A substring will be taken from this string"
+position=12
+position2=31
+length=4
+substring1=${string2:position:length}
+substring2=${string2:position2}
+echo "string2 = $string2"
+echo "A $length character substring starting at index $position is: $substring1"
+echo "A substring going to the end of line starting at index $position2 is: $substring2"
+echo
+
+#Simple data extraction:
+#Using what was provided above, here is a code segment that extracts the first name from a data record.
+echo "SIMPLE DATA EXTRACTION"
+datarecord="last=Doe,first=John,state=NM" #The data record which will be examined.
+comma1=`expr index "$datarecord" ','` #Finding the position of the first comma.
+chopfield=${datarecord:comma1} #Creating a substring that starts at the first comma and runs to the end of line.
+comma2=`expr index "$chopfield" ','` #Finding the location of the comma in the substring.
+length=`expr $comma2 - 6 - 1` #Finding the length of the first name.
+firstname=${chopfield:6:$length} #Extracting the first name from the substring.
+echo "The raw data record is: $datarecord"
+echo "The first name extracted from the data record is: $firstname"
+echo
+
+#Substring replacement:
+#There are many ways to find, replace, and manipulate substrings found within strings.
+echo "SUBSTRING REPLACEMENT"
+string3="the sub strings in the string will be manipulated by the"
+echo "string3 = $string3"
+#Replace the first occurrence of a substring:
+echo 'Replacing the first occurrence of "string" with "test":'
+echo "	${string3[@]/string/test}"
+#Replace all occurrences of a substring:
+echo 'Replacing every occurrence of "string" with "test":'
+echo "	${string3[@]//string/test}"
+#Delete all occurrences of a substring (replace with an empty string):
+echo 'Deleting every occurrence of "will":'
+echo "	${string3[@]//will/}"
+#Replacing a substring if it is at the beginning of a string:
+echo 'Replacing the occurrence of "the" at the start of the line with "test":'
+echo "	${string3[@]/#the/test}"
+#Replacing a substring if it is at the end of a string:
+echo 'Replacing the occurrence of "the" at the end of the line with "test":'
+echo "	${string3[@]/%the/test}"
+#Replacing an occurance of a substring with the ouput of a command:
+echo 'Replacing the occurrence of "the" at the end of the line with the ouput of "date +%Y-%m-%d":'
+echo "	${string3[@]/%the/$(date +%Y-%m-%d)}"
+
