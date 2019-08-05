@@ -1,0 +1,36 @@
+#! /bin/bash
+
+#Like other programming languages, bash allows for the implementation of functions.
+#These subroutines are convenient for repeated tasks. They use the following formats:
+#function funcName {
+#	command
+#}
+
+#funcname() [
+#	command
+#}
+
+#funcName{
+#command
+#}
+
+#Functions can be called by writing their names. A function call is equivelent to a command.
+#Parameters can also be passed to a function. Within the funtion, the first parameter is 41, the second is $2, and so on.
+
+function functionB {
+	echo "Called functionB"
+}
+
+function functionA {
+	echo "You called functionA with parametr $1"
+}
+
+function adder {
+	echo "$(($1 + $2))"
+}
+
+#Function calls:
+functionA "Hello There" #Calling function a with a parameter.
+functionB #Calling functionB.
+adder 4 8 #Calling adder with a set of parameters.
+
