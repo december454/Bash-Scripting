@@ -1,0 +1,33 @@
+#! /bin/bash
+
+#Using the trap command, you can catch a special signal, interrupt, or user input.
+#This is useful for stopping users from forcefully exiting your sctipts with ctrl c and the like.
+#The command follows this basic syntax: trap <arg/func> <signal>
+
+function func0 {
+echo "This is a test of the trap command"
+}
+
+#Common signal types that you can trap include:
+# SIGINT: interrupt signal (Ctl+c)
+# SIGQUIT: quit signal (Ctl+c)
+# SIGFPE: attempted an illegal math operation
+
+#You can list all signal types with the following command: kill -l
+#Each signal type has a number before its name; this can also be used to refernce it, more quickly.
+#For example, the trap written below could also be written as: trap func0 2 15
+echo "LIST OF SIGNAL TYPES:"
+kill -l
+echo
+
+trap func0 SIGINT SIGTERM
+echo "The script will run unti lyou hit ctrl+z"
+echo "Hit ctrl+c to test the trap command"
+
+while true;
+do
+	sleep 60
+done
+
+#A common usage of the trap command is to remove temporary folders before exiting.
+#For instance: trap "rm path/to/fold; exit" 2
