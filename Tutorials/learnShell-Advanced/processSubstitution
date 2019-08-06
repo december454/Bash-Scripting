@@ -1,0 +1,23 @@
+#! /bin/bash
+
+#Process substitution allows a process's unput or output to be referenced as a file.
+#It follows two basic forms:
+#output <(command)
+#input >(command)
+
+#Examples:
+
+#You have two files to compare, but they are not sorted. This may cause false positives if the case lines are not ordered.
+#To solve this, you can create two new files, sorted versions of each one, and then compare those two:
+sort Process-Substitution/file1 > Process-Substitution/sortedFile1
+sort Process-Substitution/file2 > Process-Substitution/sortedFile2
+diff Process-Substitution/sortedFile1 Process-Substitution/sortedFile2
+#However, you could do the same thing much more elegantly with process substitution:
+diff <(sort Process-Substitution/file1) <(sort Process-Substitution/file2)
+
+#You want to store an application's logs to a file while also printing them out on screen.
+#You can achieve this by using process substitution:
+echo "This will be printed AND logged" | tee Process-Substitution/log.txt
+
+#Using the same example as above, you can modify it so that text is printed out normally, but the logs are all lowercase:
+echo "This will be printed AND logged" | tee >(tr '[:upper:]' '[:lower:]' >  Process-Substitution/log.txt)
