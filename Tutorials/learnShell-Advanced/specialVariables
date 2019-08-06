@@ -1,0 +1,42 @@
+#! /bin/bash
+
+#Besides the variables which refer to parameters, there are a number of other special variables in bash as well.
+#Some include:
+# $0 - The filename of the current script.
+# $n - The Nth argument passed to script was invoked or function was called.
+# $# - The number of argument passed to script or function.
+# $@ - All arguments passed to script or function. Goes to next line when printing.
+# $* - All arguments passed to script or function. Does not go to next line when printing.
+# $? - The exit status of the last command executed.
+# $$ - The process ID of the current shell. For shell scripts, this is the process ID under which they are executing.
+# $! - The process number of the last background command.
+
+echo "Script Name: $0"
+
+function func0 {
+	for var in $@
+	do
+		i=$((i + 1))
+		echo "The \$${i} argument is: ${var}"
+	done
+	echo "Total number of arguments: $#"
+}
+func0 These are arguments for the function
+
+echo
+
+#The variables $* and $@ have different behaviors when they are enclosed in "double quotes".
+function func1 {
+	echo "--- \"\$*\""
+	for arg in "$*"
+	do
+		echo $arg
+	done
+
+	echo "--- \"\$@\""
+	for arg in "$@"
+	do
+		echo $arg
+	done
+}
+func1 These are arguments for the function
