@@ -1,0 +1,33 @@
+#! /bin/bash
+
+#While scripting, you will often need to perfom various tests on files. Bash provides several useful commands to help with this.
+#The general systax follows this structure:
+#-<command> [filename]
+#[filename1] -<command> [filename2]
+
+#Some of the commands used for file testing include:
+
+#Test if file exits: -e
+echo "TEST IF FILE EXISTS:"
+filename=readme.txt
+if [ -e "$filename" ]; then
+	echo "The file $filename exists"
+fi
+echo
+
+#Test if directory exists: -d
+echo "TEST IF DIRECTORY EXISTS:"
+dirname="/usr"
+if [ -d "$dirname" ]; then
+	echo "the directory $dirname exists"
+fi
+echo
+
+#Test if user running script has read permission: -r
+echo "TEST IF USER RUNNING SCRIPT HAS READ PERMISSION:"
+filename=readme.txt
+if [ -r $filename ]; then
+	echo "You can read the file $filename"
+else
+	echo "You cannot read the file $filename"
+fi
