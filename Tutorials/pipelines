@@ -1,0 +1,21 @@
+#! /bin/bash
+
+#Pipelines or simply pipes allow you to chain together commands in your scripts.
+#They take the ouput of one command and use it as the input for another.
+#Pieplines are represented by the pipe character: | They are use with this basic format: command1 | command2
+#By default, pipelines only forward the standard output of a command.
+#If you want to pipe the command output, including the standard error, use: |& This is short for 2>&1
+
+#Examples:
+
+#The following line will pipe the output of ls to wc. This will quickly find the number of lines in a specified directory.
+echo "NUMBER OF LINES IN /etc:"
+echo "ls /etc | wc -l"
+ls /etc | wc -l
+echo
+
+#This command will pipe the output of ls to head. This is an easy way of displaing the first ten entries in a directory.
+echo "FIRST TEN ENTRIES IN /etc:"
+echo "ls /etc | head"
+ls /etc | head
+echo
